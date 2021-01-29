@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "alias": "",
+  "name": "MyTownhome",
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": { "Location": "https://mytownhome.ca/$1" }
+    }
+  ]
+}

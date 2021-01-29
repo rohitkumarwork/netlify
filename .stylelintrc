@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin"
+  ],
+  "rules": {
+    "block-no-empty": true,
+    "color-no-hex": true,
+    "order/properties-order": [],
+    "plugin/rational-order": [true, {
+      "border-in-box-model": false,
+      "empty-line-between-groups": false,
+    }]
+  }
+}

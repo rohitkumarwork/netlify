@@ -1,0 +1,2932 @@
+@media (min-width: 320px) and (max-width: 480px){
+    .topBar {
+        z-index: 1051;
+    }
+    .topBar .navbar .navbar-toggler {
+        border-color: #f89e37;
+    }
+    .topBar .navbar .navbar-brand img {
+        width: 40px;
+        margin-left: 0px;
+    }
+    .topBar .navbar .serchForm {
+       padding: 5px 2px 5px 30px;
+        min-width: 200px;
+        font-size: 13px;
+        margin-left: 0;
+        box-shadow: 0px 0px 15px 0px #d5d5d55e;
+            border-radius: 5px;
+    }
+    .topBar .navbar .serchForm input {
+        font-size: 10px;
+    }
+    .topBar .navbar .serchForm img {
+        position: absolute;
+        left: 9px;
+        top: 8px;
+        width: 16px;
+    }
+    .topBar .navbar .navbar-collapse {
+        width: 100%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: 49px;
+        box-shadow: 0px 5px 17px 0px #d5d5d540;
+    }
+    .leftTitleBox {
+        transform: translate3d(0%, 0px, 10px);
+        top: 50px;
+        max-width: 430px;
+        width: 90%;
+        padding: 15px 10px;
+        margin-right: 25px;
+        overflow: inherit;
+        transition: all .2s ease;
+        max-height: calc(100vh - 50px);
+    }
+    .leftTitleBox.full-sidebar {
+        transform: translate3d(-100%, 0px, 10px);
+        top: 50px;
+        max-width: 430px;
+        width: 90%;
+        padding: 15px 10px;
+        margin-right: 25px;
+        overflow: inherit;
+        transition: all .2s ease;
+    }
+    .topBar .navbar .navbar-collapse .navbar-nav {
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+    }
+    .topBar .navbar .navbar-brand {
+        margin-right: 0;
+    }
+    .topBar .navbar {
+        padding: 0px 10px;
+    }
+    .topBar .navbar .navbar-collapse .navbar-nav .nav-link {
+       
+    padding: 0 10px;
+       
+    height: 40px;
+       
+    line-height: 40px;
+       
+    width: 100%;
+    }
+    .topBar .navbar .headerBtn {
+        height: 40px;
+        border-radius: 0px;
+        padding: 0 22px;
+        background: #f89e37;
+        line-height: 40px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .leftTitleBox .topTitleAction .leftSide {
+        float: left;
+        font-size: 21px;
+    }
+    .leftTitleBox .titleDiscriptions .contentBox {
+        font-size: 12px;
+    }
+    .leftTitleBox .titleDiscriptions .actionBtn .orageBtn {
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        padding: 0px 15px;
+    }
+    .leftTitleBox .topTitleAction .rightSide .stageDrop {
+     
+        max-width: 100px;
+    }
+    .bookAppo .modal-body {
+        border-radius: 0px !important;
+        padding: 15px;
+    }
+    .bookAppo .modal-body {
+        border-radius: 0px!important;
+        padding: 15px;
+    }
+    .bookAppo .modal-body .headerContent .title {
+        font-size: 24px;
+    }
+    .bookAppo .modal-body .headerContent .subtitleContent {
+     
+        font-size: 14px;
+    }
+    .bookAppo {
+        width: 100%;
+        max-width: 431px;
+        top: 60px;
+        transform: translateY(0%)!important;
+        margin:0px;
+    }
+    .bookAppo .modal-body .form .input-form .input-field .form-control {
+        height: 38px;
+        line-height: 38px;
+    }
+    .bookAppo .modal-content {
+        border-radius: 5px;
+    }
+    .leftTitleBox.full-sidebar .tglBtn {
+        right: -30px;
+    }
+     .tglBtn {
+        display: block;
+    }
+    .cityBox {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 10px 0;
+        overflow-y: scroll!important;
+        height: calc(100vh - 120px);
+    }
+    .cityBox .regionsBox .cityNameTitle .cityName {
+        font-size: 13px;
+        color: #757575;
+    }
+    .cityProjectList .projectDis .projectPic {
+        position: absolute;
+        left: 0;
+        height: 50px;
+        width: 100px;
+        top: -4px;
+    }
+    .cityProjectList .projectDis {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 46px 0px 10px 0px;
+        border-bottom: 1px solid #d5d5d56b;
+        margin-bottom: 10px;
+    }
+    .leftTitleBox .topTitleAction {
+        width: 100%;
+        display: inline-block;
+        justify-content: initial;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .leftTitleBox .topTitleAction .rightSide {
+        width: 100%;
+        float: left;
+    }
+    .cityProjectList .projectDis .projectPrice {
+        width: auto;
+        float: left;
+        position: absolute;
+        font-weight: 600;
+        color: #fd8903;
+        font-size: 21px;
+        right: 0;
+        top: 4px;
+    }
+    .cityProjectList .projectDis .projectArea {
+        font-size: 12px;
+    }
+    .fullDetailContent .leftSection {
+        width: 100%;
+        float: left;
+        height: 340px;
+        overflow-y: scroll;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .topHead {
+        display: block;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .topHead .projectTitle {
+        font-size: 18px;
+        color: #808080;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .topHead .projectTitle .stagePos {
+        font-size: 13px;
+        color: #00cc00;
+        width: 100%;
+        float: left;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .projectInner ul li .projectInterior {
+        font-size: 11px;
+    }
+    .show .modal-dialog.btmPopUp {
+        max-width: calc(100% - 0px);
+        margin: 0;
+        width: 100%;
+        right: 0;
+        float: right;
+        bottom: 0;
+        max-height: 381px;
+        min-height: 381px;
+        transform: translate3d(0px, -100%, 0px)!important;
+        top: 100%;
+    }
+    .modal-dialog.btmPopUp {
+        transform: translate3d(0px, 0%, 0px)!important;
+        max-width: calc(100% - 0px);
+        margin: 0;
+        width: 100%;
+        right: 0;
+        float: right;
+        bottom: 0;
+        max-height: 381px;
+        top: 100%;
+        min-height: 381px;
+    }
+    .fullDetailContent .rightSection {
+        display: none;
+    }
+    .modal-backdrop.show {
+        opacity: .1;
+        z-index: 1051;
+    }
+    #bottomPop{
+        z-index: 1052;
+    }
+    
+    .bannerBox .leftSidebox {
+        padding: 40px 10px 30px 10px;
+        width: 100%;
+            order: 2;
+    }
+    .bannerBox .leftSidebox .leftPanel {
+        width: 100%;
+    }
+    .bannerBox .leftSidebox .leftPanel .projectTitle {
+        font-size: 24px;
+    }
+    .bannerBox .downloadZip {
+       
+        top: 7px;
+        font-size: 11px;
+        padding: 5px 13px;
+    }
+    .bannerBox .downloadZip img {
+        width: 15px;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos {
+        padding: 10px 0;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos .potionsBox {
+        padding: 10px;
+        padding-left: 85px;
+        font-size: 16px;
+    }
+    .bannerBox .leftSidebox .rightPanel {
+        width: 100%;
+        float: left;
+            
+    }
+    .bannerBox .leftSidebox .rightPanel .Step {
+        width: 33%;
+        margin-bottom: 5px;
+        border-right: 1px dashed #d5d5d585;
+        border-bottom: 0;
+        padding: 5px;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step:last-child {
+         border-right:none;
+        }
+    .bannerBox .leftSidebox .rightPanel .Step span {
+        font-size: 18px;
+    }
+    .bannerBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .rightSideBox {
+        width: 100%;
+        order: 1;
+    }
+    .rightSideBox .buildingContentBox .carousel-control-prev {
+        width: 30px;
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .carousel-control-next {
+        width: 30px;
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .sliderBg {
+        height: 210px;
+        
+    }
+    .bannerBox .leftSidebox:before{
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .carousel-indicators li {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+    }
+    .pointInterest .points ul li a .interestIcons img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .pointInterest .points ul li {
+        display: inline-flex;
+        padding: 0 0px;
+        text-align: center;
+        width: 33%;
+        float: left;
+    }
+    .pointInterest .points ul li a {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .ctaForm{
+        display: none;
+    }
+    .ctaBox .ctaForm{
+        display: block!important;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step span.violet {
+        font-size: 13px;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step span.green {
+        font-size: 13px;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step span.orange {
+        font-size: 13px;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos .potionsBox img {
+       
+        width: 42px;
+    }
+    
+    .innerContentzone .peraContent .facts .factList .lableTask {
+      
+        padding: 6px 0px;
+    }
+    .innerContentzone .peraContent .facts .factList .lableTask .leftLable {
+        min-width: 163px;
+        font-size: 13px;
+     
+    }
+    .tabulerContent {
+        padding: 0px;
+    }
+    .nearsProjects {
+        padding: 10px;
+    }
+    .pointInterest .heading {
+        font-size: 18px;
+    }
+    .ApplewoodStatistics .heading {
+        font-size: 18px;
+    }
+    .bannerBox .leftSidebox .leftPanel .projectroad {
+        font-size: 13px;
+        padding: 5px 0;
+    }
+    .innerContentzone .peraContent .subtitle {
+        font-size: 13px;
+    }
+    .nearsProjects .nearHeading {
+        font-size: 14px
+    }
+    .ctaBox {
+        padding: 30px 0;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:before{
+        display: none;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:after{
+        display: none;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item {
+        margin: 0;
+        transform: skewX(0deg);
+        padding: 0;
+        }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link {
+        transform: skewX(0deg);
+        padding: 6px;
+        font-size: 13px;
+    }
+    
+    .floreBoxPanel .floreBox .headingTitle {
+        font-size: 18px;
+    }
+    .mapImage {
+        width: 70px;
+        height: 70px;
+        border: 3px solid #ffff;
+        top: 0px;
+    }
+    .floreBoxPanel .floreBox .headingTitle {
+        width: 70%;
+        font-size: 18px;
+    }
+    .floreBoxPanel .floreBox .florePoints ul li .stp {
+        padding-right: 0px;
+        font-size: 12px;
+    }
+    .floreBoxPanel .floreBox .checkingPrice {
+        padding: 5px 0;
+    }
+    .floreBoxPanel .floreBox {
+        margin-bottom: 15px;
+    }
+    .priceTable .table tbody tr td {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .applewoodProject .homeDetails {
+        box-shadow:none;
+    }
+    .innerContentzone .peraContent .title {
+        font-size: 20px!important;
+    }
+    .statisticsRate .stats ul li {
+        width: 100%;
+    }
+    .statisticsRate .stats ul li + li:before {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: #cecece38;
+        content: "";
+        left: 0;
+    }
+    
+    .calculatorCustom .calculatorSliders {
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+    .morgageScreen .morgageTitle {
+        font-size: 18px;
+    }
+    .tabulerBox .tabulerStep .tab-content .tab-pane {
+        display: block;
+        opacity: 1;
+    }
+    
+    .tabulerBox .tabulerStep .nav-tabs {
+        display: none;
+    }
+    .innerContentzone .peraContent .facts .factList {
+        margin-bottom: 10px;
+    }
+        
+                
+    .bannersection {
+        width: 100%;
+        float: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .bannersection .leftSection {
+    width: 100%;
+    padding: 15px;
+        order: 2;
+    }
+    .bannersection .leftSection .headingTitle {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    .bannersection .leftSection .bannerSubtitle {
+        margin-bottom: 26px;
+    }
+    bannersection .leftSection .homeWorthSection .title {
+        font-size: 18px;
+    } 
+    .bannersection .leftSection .homeWorthSection .subtitle {
+        font-size: 15px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox {
+        padding: 15px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox {
+        padding-right: 5px!important;
+        padding: 5px;
+        padding-bottom: 60px;
+        border-radius: 5px;
+        border: 1px solid #d5d5d552;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox .ShowMeNow {
+        width: calc(100% - 20px);
+        right: 10px;
+        bottom: 4px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox .form-control {
+        border-bottom: 1px solid #d5d5d557;
+        border-radius: 0;
+    }
+    .bannersection .rightSection {
+        width: 100%;
+        display: flex;
+        min-height:350px;
+        padding: 25px;
+        align-items: center;
+        order: 1;
+    }
+            
+    .bannersection .leftSection .homeWorthSection .title {
+        font-size: 17px;
+        font-weight: 700;
+    }
+        .bannersection .leftSection .homeWorthSection .worthBox .googleRating{
+            font-size: 15px;
+        }
+    .bannersection .rightSection .serchingHome .serchHome {
+       
+        padding: 13px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 13px;
+        
+    }
+    .bannersection .rightSection .serchingHome .serchNear {
+       
+        height: 42px;
+        line-height: 38px;
+        padding: 0 15px;
+        font-size: 15px;
+    }  
+    .bannersection .rightSection .serchingHome .serchNear img {
+        width: 20px;
+    }    
+        
+     .packageSection .TabulerBox {
+        width:calc(100% - 30px);
+        max-width: 540px;
+        top: 0px;
+    }   
+    .packageSection .tab-content {
+        padding: 30px 15px 50px 15px;
+    }
+    .packageSection .TabulerBox .title {
+        font-size: 18px;
+    }
+    .packageContent .packContent .headingTitle {
+        font-size: 18px;
+    }  
+    .packageContent .packContent .priceSlider .SelectValue {
+        font-size: 15px;
+    }    
+    .packageContent .packContent .priceSlider .SelectValue span {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 0px;
+       
+    }    
+    .packageContent .packContent .priceSlider {
+        padding: 20px 0;
+    }
+    .packageContent .packContent .priceSlider .SavedPrice{
+            font-size: 15px;
+    } 
+    .freeServices {
+        padding: 20px 0px;
+    } 
+    .freeServices .headindBox{
+        display: block;
+        }
+    .freeServices .headindBox .RightT {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .getServices ul li {
+        display: inline-block;
+        width: 50%;
+    }
+    .getServices ul li .serviceBx{
+            font-size: 14px;
+            padding-left: 40px!important;
+        padding: 10px 5px;
+        }
+    .getServices ul li .serviceBx img {
+        position: absolute;
+        left: 7px;
+        width: 35px;
+        top: 18px;
+    }
+    .getServices ul li .serviceBx span{
+        font-size: 18px;
+    } 
+    .freeServices .freeContentBox{
+        margin-bottom: 0px;
+    } 
+        .hotListingProject{
+            display: block;
+        }    
+    .leftSection {
+        padding: 15px;
+        width: 100%;
+       
+    }
+    .leftSection .titleContent .mainTitle{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .rightSection {
+        width: 100%;
+        padding: 30px 15px;
+    } 
+    .rightSection ul .nav-item .nav-link {
+       
+        font-size: 12px;
+        padding: 13px 4px;
+        font-weight: 500;
+    } 
+    .rightSection .tab-content{
+        padding:15px;
+    } 
+    .townHomesStat {
+        padding: 15px;
+    }
+    .townHomesStat .mainTitle .HeadTitle {
+        font-size: 30px;
+        margin-bottom: 10px;
+    } 
+    .townHomesStat .mainTitle .subTitle{
+        font-size: 14px;
+    }
+    .townHomesStat .statsAverageBox {
+        padding: 15px;
+        margin-bottom: 12px;
+    } 
+    .townHomesStat .statsAverageBox .heading {
+        font-size: 18px;    
+    }
+      .averageBox .averageTitlebox {
+       
+        height: 54px;
+        line-height: 54px;
+        font-size: 13px;
+    } 
+    .averageBox .averageTitlebox span {
+        font-size: 16px;
+    }
+        .timeHomeratio{
+            border-right:0px;
+        }  
+    .leftSection .titleContent .subTitle {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }    
+        
+    .blogPanel .blogContent {
+        margin-bottom: 15px;
+    }
+        .blogPanel .blogContent .blogInnerContent .title{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }  
+        .blogPanel .blogContent .blogInnerContent .subtitle{
+            font-size: 13px;
+        }    
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @media (min-width: 481px) and (max-width: 575px){
+    .topBar {
+        z-index: 1051;
+    }
+        .topBar .navbar .navbar-toggler {
+        border-color: #f89e37;
+    }
+    .topBar .navbar .navbar-brand img {
+        width: 40px;
+        margin-left: 0px;
+    }
+    .topBar .navbar .serchForm {
+       padding: 5px 2px 5px 30px;
+        min-width: 200px;
+        font-size: 13px;
+        margin-left: 0;
+        box-shadow: 0px 0px 15px 0px #d5d5d55e;
+            border-radius: 5px;
+    }
+    .topBar .navbar .serchForm input {
+       
+        font-size: 10px;
+    }
+    .topBar .navbar .serchForm img {
+        position: absolute;
+        left: 9px;
+        top: 8px;
+        width: 16px;
+    }
+    .topBar .navbar .navbar-collapse {
+        width: 100%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: 49px;
+        box-shadow: 0px 5px 17px 0px #d5d5d540;
+    }
+    .leftTitleBox {
+        transform: translate3d(0%, 0px, 10px);
+        top: 50px;
+        max-width: 430px;
+        width: 90%;
+        padding: 15px 10px;
+        margin-right: 25px;
+        overflow: inherit;
+        transition: all .2s ease;
+        max-height: calc(100vh - 50px);
+    }
+    .leftTitleBox.full-sidebar {
+        transform: translate3d(-100%, 0px, 10px);
+        top: 50px;
+        max-width: 430px;
+        width: 90%;
+        padding: 15px 10px;
+        margin-right: 25px;
+        overflow: inherit;
+        transition: all .2s ease;
+    }
+    .topBar .navbar .navbar-collapse .navbar-nav {
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+    }
+    .topBar .navbar .navbar-brand {
+        margin-right: 0;
+    }
+    .topBar .navbar {
+        padding: 0px 10px;
+    }
+    .topBar .navbar .navbar-collapse .navbar-nav .nav-link {
+       
+    padding: 0 10px;
+       
+    height: 40px;
+       
+    line-height: 40px;
+       
+    width: 100%;
+    }
+    .topBar .navbar .headerBtn {
+        height: 40px;
+        border-radius: 0px;
+        padding: 0 22px;
+        background: #f89e37;
+        line-height: 40px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .leftTitleBox .topTitleAction .leftSide {
+        float: left;
+        font-size: 21px;
+    }
+    .leftTitleBox .titleDiscriptions .contentBox {
+        font-size: 12px;
+    }
+    .leftTitleBox .titleDiscriptions .actionBtn .orageBtn {
+       
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        padding: 0px 15px;
+        
+    }
+    .leftTitleBox .topTitleAction .rightSide .stageDrop {
+     
+        max-width: 100px;
+    }
+    .bookAppo .modal-body {
+        border-radius: 0px!important;
+        padding: 15px;
+    }
+    .bookAppo .modal-body {
+        border-radius: 0px!important;
+        padding: 15px;
+    }
+    .bookAppo .modal-body .headerContent .title {
+        font-size: 24px;
+    }
+    .bookAppo .modal-body .headerContent .subtitleContent {
+     
+        font-size: 14px;
+    }
+    .bookAppo {
+        width: 100%;
+        max-width: 431px;
+        top: 60px;
+        transform: translateY(0%)!important;
+        margin:0px;
+    }
+    .bookAppo .modal-body .form .input-form .input-field .form-control {
+        height: 38px;
+        line-height: 38px;
+    }
+    .bookAppo .modal-content {
+        border-radius: 5px;
+    }
+    .leftTitleBox.full-sidebar .tglBtn {
+        right: -30px;
+    }
+     .tglBtn {
+        display: block;
+    }
+    .cityBox {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 10px 0;
+        overflow-y: scroll!important;
+        height: calc(100vh - 120px);
+    }
+    .cityBox .regionsBox .cityNameTitle .cityName {
+        font-size: 13px;
+        color: #757575;
+    }
+    .cityProjectList .projectDis .projectPic {
+        position: absolute;
+        left: 0;
+        height: 50px;
+        width: 100px;
+        top: -4px;
+    }
+    .cityProjectList .projectDis {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 46px 0px 10px 0px;
+        border-bottom: 1px solid #d5d5d56b;
+        margin-bottom: 10px;
+    }
+    .leftTitleBox .topTitleAction {
+        width: 100%;
+        display: inline-block;
+        justify-content: initial;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .leftTitleBox .topTitleAction .rightSide {
+        width: 100%;
+        float: left;
+    }
+    .cityProjectList .projectDis .projectPrice {
+        width: auto;
+        float: left;
+        position: absolute;
+        font-weight: 600;
+        color: #fd8903;
+        font-size: 21px;
+        right: 0;
+        top: 4px;
+    }
+    .cityProjectList .projectDis .projectArea {
+        font-size: 12px;
+    }
+    .fullDetailContent .leftSection {
+        width: 100%;
+        float: left;
+        height: 340px;
+        overflow-y: scroll;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .topHead {
+        display: block;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .topHead .projectTitle {
+        font-size: 18px;
+        color: #808080;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .topHead .projectTitle .stagePos {
+        font-size: 13px;
+        color: #00cc00;
+        width: 100%;
+        float: left;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .projectInner ul li .projectInterior {
+        font-size: 11px;
+    }
+    .show .modal-dialog.btmPopUp {
+        max-width: calc(100% - 0px);
+        margin: 0;
+        width: 100%;
+        right: 0;
+        float: right;
+        bottom: 0;
+        max-height: 381px;
+        min-height: 381px;
+        transform: translate3d(0px, -100%, 0px)!important;
+        top: 100%;
+    }
+    .modal-dialog.btmPopUp {
+        transform: translate3d(0px, 0%, 0px)!important;
+        max-width: calc(100% - 0px);
+        margin: 0;
+        width: 100%;
+        right: 0;
+        float: right;
+        bottom: 0;
+        max-height: 381px;
+        top: 100%;
+        min-height: 381px;
+    }
+    .fullDetailContent .rightSection {
+        display: none;
+    }
+    .modal-backdrop.show {
+        opacity: .1;
+        z-index: 1051;
+    }
+    #bottomPop{
+        z-index: 1052;
+    }
+    
+    .bannerBox .leftSidebox {
+        padding: 40px 10px 30px 10px;
+        width: 100%;
+            order: 2;
+    }
+    .bannerBox .leftSidebox .leftPanel {
+        width: 100%;
+    }
+    .bannerBox .leftSidebox .leftPanel .projectTitle {
+        font-size: 24px;
+    }
+    .bannerBox .downloadZip {
+       
+        top: 7px;
+        font-size: 11px;
+        padding: 5px 13px;
+    }
+    .bannerBox .downloadZip img {
+        width: 15px;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos {
+        padding: 10px 0;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos .potionsBox {
+        padding: 10px;
+        padding-left: 85px;
+        font-size: 16px;
+    }
+    .bannerBox .leftSidebox .rightPanel {
+        width: 100%;
+        float: left;
+            
+    }
+    .bannerBox .leftSidebox .rightPanel .Step {
+        width: 33%;
+        margin-bottom: 5px;
+        border-right: 1px dashed #d5d5d585;
+        border-bottom: 0;
+        padding: 5px;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step:last-child {
+         border-right:none;
+        }
+    .bannerBox .leftSidebox .rightPanel .Step span {
+        font-size: 18px;
+    }
+    .bannerBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .rightSideBox {
+        width: 100%;
+        order: 1;
+    }
+    .rightSideBox .buildingContentBox .carousel-control-prev {
+        width: 30px;
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .carousel-control-next {
+        width: 30px;
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .sliderBg {
+        height: 210px;
+        
+    }
+    .bannerBox .leftSidebox:before{
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .carousel-indicators li {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+    }
+    .pointInterest .points ul li a .interestIcons img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .pointInterest .points ul li {
+        display: inline-flex;
+        padding: 0 0px;
+        text-align: center;
+        width: 33%;
+        float: left;
+    }
+    .pointInterest .points ul li a {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .ctaForm{
+        display: none;
+    }
+    .ctaBox .ctaForm{
+        display: block!important;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step span.violet {
+        font-size: 13px;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step span.green {
+        font-size: 13px;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step span.orange {
+        font-size: 13px;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos .potionsBox img {
+       
+        width: 42px;
+    }
+    
+    .innerContentzone .peraContent .facts .factList .lableTask {
+      
+        padding: 6px 0px;
+    }
+    .innerContentzone .peraContent .facts .factList .lableTask .leftLable {
+        min-width: 163px;
+        font-size: 13px;
+     
+    }
+    .tabulerContent {
+        padding: 0px;
+    }
+    .nearsProjects {
+        padding: 10px;
+    }
+    .pointInterest .heading {
+        font-size: 18px;
+    }
+    .ApplewoodStatistics .heading {
+        font-size: 18px;
+    }
+    .bannerBox .leftSidebox .leftPanel .projectroad {
+        font-size: 13px;
+        padding: 5px 0;
+    }
+    .innerContentzone .peraContent .subtitle {
+        font-size: 13px;
+    }
+    .nearsProjects .nearHeading {
+        font-size: 14px
+    }
+    .ctaBox {
+        padding: 30px 0;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:before{
+        display: none;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:after{
+        display: none;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item {
+        margin: 0;
+        transform: skewX(0deg);
+        padding: 0;
+        }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link {
+        transform: skewX(0deg);
+        padding: 6px;
+        font-size: 13px;
+    }
+    
+    .floreBoxPanel .floreBox .headingTitle {
+        font-size: 18px;
+    }
+    .mapImage {
+        width: 70px;
+        height: 70px;
+        border: 3px solid #ffff;
+        top: 0px;
+    }
+    .floreBoxPanel .floreBox .headingTitle {
+        width: 70%;
+        font-size: 18px;
+    }
+    .floreBoxPanel .floreBox .florePoints ul li .stp {
+        padding-right: 0px;
+        font-size: 12px;
+    }
+    .floreBoxPanel .floreBox .checkingPrice {
+        padding: 5px 0;
+    }
+    .floreBoxPanel .floreBox {
+        margin-bottom: 15px;
+    }
+    .priceTable .table tbody tr td {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .applewoodProject .homeDetails {
+        box-shadow:none;
+    }
+    .innerContentzone .peraContent .title {
+        font-size: 20px!important;
+    }
+    .statisticsRate .stats ul li {
+        width: 100%;
+    }
+    .statisticsRate .stats ul li + li:before {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: #cecece38;
+        content: "";
+        left: 0;
+    }
+    
+    .calculatorCustom .calculatorSliders {
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+    .morgageScreen .morgageTitle {
+        font-size: 18px;
+    }
+    .tabulerBox .tabulerStep .tab-content .tab-pane {
+        display: block;
+        opacity: 1;
+    }
+    
+    .tabulerBox .tabulerStep .nav-tabs {
+        display: none;
+    }
+    .innerContentzone .peraContent .facts .factList {
+        margin-bottom: 10px;
+    }
+        
+        
+                    
+    .bannersection {
+        width: 100%;
+        float: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .bannersection .leftSection {
+    width: 100%;
+    padding: 15px;
+        order: 2;
+    }
+    .bannersection .leftSection .headingTitle {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    .bannersection .leftSection .bannerSubtitle {
+        margin-bottom: 26px;
+    }
+    .bannersection .leftSection .homeWorthSection .title {
+        font-size: 18px;
+    } 
+    .bannersection .leftSection .homeWorthSection .subtitle {
+        font-size: 15px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox {
+        padding: 15px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox {
+        padding-right: 5px!important;
+        padding: 5px;
+        padding-bottom: 60px;
+        border-radius: 5px;
+        border: 1px solid #d5d5d552;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox .ShowMeNow {
+        width: calc(100% - 20px);
+        right: 10px;
+        bottom: 4px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox .form-control {
+        border-bottom: 1px solid #d5d5d557;
+        border-radius: 0;
+    }
+    .bannersection .rightSection {
+        width: 100%;
+        display: flex;
+        min-height:350px;
+        padding: 25px;
+        align-items: center;
+        order: 1;
+    }
+            
+    .bannersection .leftSection .homeWorthSection .title {
+        font-size: 17px;
+        font-weight: 700;
+    }
+        .bannersection .leftSection .homeWorthSection .worthBox .googleRating{
+            font-size: 15px;
+        }
+    .bannersection .rightSection .serchingHome .serchHome {
+       
+        padding: 13px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 13px;
+        
+    }
+    .bannersection .rightSection .serchingHome .serchNear {
+        height: 42px;
+        line-height: 38px;
+        padding: 0 15px;
+        font-size: 15px;
+    }  
+    .bannersection .rightSection .serchingHome .serchNear img {
+        width: 20px;
+    }    
+        
+     .packageSection .TabulerBox {
+        width:calc(100% - 30px);
+        max-width: 540px;
+        top: 0px;
+    }   
+    .packageSection .tab-content {
+        padding: 30px 15px 50px 15px;
+    }
+    .packageSection .TabulerBox .title {
+        font-size: 18px;
+    }
+    .packageContent .packContent .headingTitle {
+        font-size: 18px;
+    }  
+    .packageContent .packContent .priceSlider .SelectValue {
+        font-size: 15px;
+    }    
+    .packageContent .packContent .priceSlider .SelectValue span {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }    
+    .packageContent .packContent .priceSlider {
+        padding: 20px 0;
+    }
+    .packageContent .packContent .priceSlider .SavedPrice{
+            font-size: 15px;
+    } 
+    .freeServices {
+        padding: 20px 0px;
+    } 
+    .freeServices .headindBox{
+        display: block;
+        }
+    .freeServices .headindBox .RightT {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .getServices ul li {
+        display: inline-block;
+        width: 50%;
+    }
+    .getServices ul li .serviceBx{
+            font-size: 14px;
+            padding-left: 40px!important;
+        padding: 10px 5px;
+        }
+    .getServices ul li .serviceBx img {
+        position: absolute;
+        left: 7px;
+        width: 35px;
+        top: 18px;
+    }
+    .getServices ul li .serviceBx span{
+        font-size: 18px;
+    } 
+    .freeServices .freeContentBox{
+        margin-bottom: 0px;
+    } 
+        .hotListingProject{
+            display: block;
+        }    
+    .leftSection {
+        padding: 15px;
+        width: 100%;
+       
+    }
+    .leftSection .titleContent .mainTitle{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .rightSection {
+        width: 100%;
+        padding: 30px 15px;
+    } 
+    .rightSection ul .nav-item .nav-link {
+       
+        font-size: 12px;
+        padding: 13px 4px;
+        font-weight: 500;
+    } 
+    .rightSection .tab-content{
+        padding:15px;
+    } 
+    .townHomesStat {
+        padding: 15px;
+    }
+    .townHomesStat .mainTitle .HeadTitle {
+        font-size: 30px;
+        margin-bottom: 10px;
+    } 
+    .townHomesStat .mainTitle .subTitle{
+        font-size: 14px;
+    }
+    .townHomesStat .statsAverageBox {
+        padding: 15px;
+        margin-bottom: 12px;
+    } 
+    .townHomesStat .statsAverageBox .heading {
+        font-size: 18px;    
+    }
+      .averageBox .averageTitlebox {
+       
+        height: 54px;
+        line-height: 54px;
+        font-size: 13px;
+    } 
+    .averageBox .averageTitlebox span {
+        font-size: 16px;
+    }
+        .timeHomeratio{
+            border-right:0px;
+        }  
+    .leftSection .titleContent .subTitle {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }    
+        
+    .blogPanel .blogContent {
+        margin-bottom: 15px;
+    }
+        .blogPanel .blogContent .blogInnerContent .title{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }  
+        .blogPanel .blogContent .blogInnerContent .subtitle{
+            font-size: 13px;
+        }      
+    }
+    
+    
+    @media (min-width: 576px) and (max-width: 767px){
+    .topBar {
+        z-index: 1051;
+    }
+        .topBar .navbar .navbar-toggler {
+        border-color: #f89e37;
+    }
+    .topBar .navbar .navbar-brand img {
+        width: 40px;
+        margin-left: 0px;
+    }
+    .topBar .navbar .serchForm {
+       padding: 5px 2px 5px 30px;
+        min-width: 200px;
+        font-size: 13px;
+        margin-left: 0;
+        box-shadow: 0px 0px 15px 0px #d5d5d55e;
+            border-radius: 5px;
+    }
+    .topBar .navbar .serchForm input {
+       
+        font-size: 10px;
+    }
+    .topBar .navbar .serchForm img {
+        position: absolute;
+        left: 9px;
+        top: 8px;
+        width: 16px;
+    }
+    .topBar .navbar .navbar-collapse {
+        width: 100%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: 49px;
+        box-shadow: 0px 5px 17px 0px #d5d5d540;
+    }
+    .leftTitleBox {
+        transform: translate3d(0%, 0px, 10px);
+        top: 50px;
+        max-width: 430px;
+        width: 90%;
+        padding: 15px 10px;
+        margin-right: 25px;
+        overflow: inherit;
+        transition: all .2s ease;
+        max-height: calc(100vh - 50px);
+    }
+    .leftTitleBox.full-sidebar {
+        transform: translate3d(-100%, 0px, 10px);
+        top: 50px;
+        max-width: 430px;
+        width: 90%;
+        padding: 15px 10px;
+        margin-right: 25px;
+        overflow: inherit;
+        transition: all .2s ease;
+    }
+    .topBar .navbar .navbar-collapse .navbar-nav {
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+    }
+    .topBar .navbar .navbar-brand {
+        margin-right: 0;
+    }
+    .topBar .navbar {
+        padding: 0px 10px;
+    }
+    .topBar .navbar .navbar-collapse .navbar-nav .nav-link {
+       
+    padding: 0 10px;
+       
+    height: 40px;
+       
+    line-height: 40px;
+       
+    width: 100%;
+    }
+    .topBar .navbar .headerBtn {
+        height: 40px;
+        border-radius: 0px;
+        padding: 0 22px;
+        background: #f89e37;
+        line-height: 40px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .leftTitleBox .topTitleAction .leftSide {
+        float: left;
+        font-size: 21px;
+    }
+    .leftTitleBox .titleDiscriptions .contentBox {
+        font-size: 12px;
+    }
+    .leftTitleBox .titleDiscriptions .actionBtn .orageBtn {
+       
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        padding: 0px 15px;
+        
+    }
+    .leftTitleBox .topTitleAction .rightSide .stageDrop {
+     
+        max-width: 100px;
+    }
+    .bookAppo .modal-body {
+        border-radius: 0px!important;
+        padding: 15px;
+    }
+    .bookAppo .modal-body {
+        border-radius: 0px!important;
+        padding: 15px;
+    }
+    .bookAppo .modal-body .headerContent .title {
+        font-size: 24px;
+    }
+    .bookAppo .modal-body .headerContent .subtitleContent {
+     
+        font-size: 14px;
+    }
+    .bookAppo {
+        width: 100%;
+        max-width: 431px;
+        top: 60px;
+        transform: translateY(0%)!important;
+        margin:0px;
+    }
+    .bookAppo .modal-body .form .input-form .input-field .form-control {
+        height: 38px;
+        line-height: 38px;
+    }
+    .bookAppo .modal-content {
+        border-radius: 5px;
+    }
+    .leftTitleBox.full-sidebar .tglBtn {
+        right: -30px;
+    }
+     .tglBtn {
+        display: block;
+    }
+    .cityBox {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 10px 0;
+        overflow-y: scroll!important;
+        height: calc(100vh - 120px);
+    }
+    .cityBox .regionsBox .cityNameTitle .cityName {
+        font-size: 13px;
+        color: #757575;
+    }
+    .cityProjectList .projectDis .projectPic {
+        position: absolute;
+        left: 0;
+        height: 50px;
+        width: 100px;
+        top: -4px;
+    }
+    .cityProjectList .projectDis {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 46px 0px 10px 0px;
+        border-bottom: 1px solid #d5d5d56b;
+        margin-bottom: 10px;
+    }
+    .leftTitleBox .topTitleAction {
+        width: 100%;
+        display: inline-block;
+        justify-content: initial;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .leftTitleBox .topTitleAction .rightSide {
+        width: 100%;
+        float: left;
+    }
+    .cityProjectList .projectDis .projectPrice {
+        width: auto;
+        float: left;
+        position: absolute;
+        font-weight: 600;
+        color: #fd8903;
+        font-size: 21px;
+        right: 0;
+        top: 4px;
+    }
+    .cityProjectList .projectDis .projectArea {
+        font-size: 12px;
+    }
+    .fullDetailContent .leftSection {
+        width: 100%;
+        float: left;
+        height: 340px;
+        overflow-y: scroll;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .topHead {
+        display: block;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .topHead .projectTitle {
+        font-size: 18px;
+        color: #808080;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .topHead .projectTitle .stagePos {
+        font-size: 13px;
+        color: #00cc00;
+        width: 100%;
+        float: left;
+    }
+    .fullDetailContent .leftSection .developedProjectDetails .projectInner ul li .projectInterior {
+        font-size: 11px;
+    }
+    .show .modal-dialog.btmPopUp {
+        max-width: calc(100% - 0px);
+        margin: 0;
+        width: 100%;
+        right: 0;
+        float: right;
+        bottom: 0;
+        max-height: 381px;
+        min-height: 381px;
+        transform: translate3d(0px, -100%, 0px)!important;
+        top: 100%;
+    }
+    .modal-dialog.btmPopUp {
+        transform: translate3d(0px, 0%, 0px)!important;
+        max-width: calc(100% - 0px);
+        margin: 0;
+        width: 100%;
+        right: 0;
+        float: right;
+        bottom: 0;
+        max-height: 381px;
+        top: 100%;
+        min-height: 381px;
+    }
+    .fullDetailContent .rightSection {
+        display: none;
+    }
+    .modal-backdrop.show {
+        opacity: .1;
+        z-index: 1051;
+    }
+    #bottomPop{
+        z-index: 1052;
+    }
+    
+    .bannerBox .leftSidebox {
+        padding: 40px 10px 30px 10px;
+        width: 100%;
+            order: 2;
+    }
+    .bannerBox .leftSidebox .leftPanel {
+        width: 100%;
+    }
+    .bannerBox .leftSidebox .leftPanel .projectTitle {
+        font-size: 24px;
+    }
+    .bannerBox .downloadZip {
+       
+        top: 7px;
+        font-size: 11px;
+        padding: 5px 13px;
+    }
+    .bannerBox .downloadZip img {
+        width: 15px;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos {
+        padding: 10px 0;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos .potionsBox {
+        padding: 16px;
+        padding-left: 85px;
+        font-size: 19px;
+    }
+    .bannerBox .leftSidebox .rightPanel {
+        width: 100%;
+        float: left;
+            
+    }
+    .bannerBox .leftSidebox .rightPanel .Step {
+        width: 33%;
+        margin-bottom: 5px;
+        border-right: 1px dashed #d5d5d585;
+        border-bottom: 0;
+        padding: 5px;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step:last-child {
+         border-right:none;
+        }
+    .bannerBox .leftSidebox .rightPanel .Step span {
+        font-size: 22px;
+    }
+    .bannerBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .rightSideBox {
+        width: 100%;
+        order: 1;
+    }
+    .rightSideBox .buildingContentBox .carousel-control-prev {
+        width: 30px;
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .carousel-control-next {
+        width: 30px;
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .sliderBg {
+        height: 300px;
+    }
+    .bannerBox .leftSidebox:before{
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .carousel-indicators li {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+    }
+    .pointInterest .points ul li a .interestIcons img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .pointInterest .points ul li {
+        display: inline-flex;
+        padding: 0 0px;
+        text-align: center;
+        width: 16%;
+        float: left;
+    }
+    .pointInterest .points ul li a {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .ctaForm{
+        display: none;
+    }
+    .ctaBox .ctaForm{
+        display: block!important;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step span.violet {
+        font-size: 14px;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step span.green {
+        font-size: 14px;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step span.orange {
+        font-size: 14px;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos .potionsBox img {
+       
+        width: 42px;
+    }
+    
+    .innerContentzone .peraContent .facts .factList .lableTask {
+      
+        padding: 6px 0px;
+    }
+    .innerContentzone .peraContent .facts .factList .lableTask .leftLable {
+        min-width: 163px;
+        font-size: 13px;
+     
+    }
+    .tabulerContent {
+        padding: 0px;
+    }
+    .nearsProjects {
+        padding: 10px;
+    }
+    .pointInterest .heading {
+        font-size: 18px;
+    }
+    .ApplewoodStatistics .heading {
+        font-size: 18px;
+    }
+    .bannerBox .leftSidebox .leftPanel .projectroad {
+        font-size: 13px;
+        padding: 5px 0;
+    }
+    .innerContentzone .peraContent .subtitle {
+        font-size: 13px;
+    }
+    .nearsProjects .nearHeading {
+        font-size: 14px
+    }
+    .ctaBox {
+        padding: 30px 0;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:before{
+        display: none;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:after{
+        display: none;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item {
+        margin: 0;
+        transform: skewX(0deg);
+        padding: 0;
+        }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link {
+        transform: skewX(0deg);
+        padding: 6px;
+        font-size: 13px;
+    }
+    
+    .floreBoxPanel .floreBox .headingTitle {
+        font-size: 18px;
+    }
+    .mapImage {
+        width: 70px;
+        height: 70px;
+        border: 3px solid #ffff;
+        top: 0px;
+    }
+    .floreBoxPanel .floreBox .headingTitle {
+        width: 70%;
+        font-size: 22px;
+    }
+    .floreBoxPanel .floreBox .florePoints ul li .stp {
+        padding-right: 0px;
+        font-size: 12px;
+    }
+    .floreBoxPanel .floreBox .checkingPrice {
+        padding: 5px 0;
+    }
+    .floreBoxPanel .floreBox {
+        margin-bottom: 15px;
+    }
+    .priceTable .table tbody tr td {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .applewoodProject .homeDetails {
+        box-shadow:none;
+    }
+    .innerContentzone .peraContent .title {
+        font-size: 23px!important;
+    }
+    .statisticsRate .stats ul li {
+        width: 25%;
+    }
+    .statisticsRate .stats ul li + li:before {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: #cecece38;
+        content: "";
+        left: 0;
+    }
+    
+    .calculatorCustom .calculatorSliders {
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+    .morgageScreen .morgageTitle {
+        font-size: 18px;
+    }
+    .tabulerBox .tabulerStep .tab-content .tab-pane {
+        display: block;
+        opacity: 1;
+    }
+    
+    .tabulerBox .tabulerStep .nav-tabs {
+        display: none;
+    }
+    .innerContentzone .peraContent .facts .factList {
+        margin-bottom: 10px;
+    }
+                
+    .bannersection {
+        width: 100%;
+        float: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .bannersection .leftSection {
+    width: 100%;
+    padding: 15px;
+        order: 2;
+    }
+    .bannersection .leftSection .headingTitle {
+        font-size: 44px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    .bannersection .leftSection .bannerSubtitle {
+        margin-bottom: 26px;
+    }
+    bannersection .leftSection .homeWorthSection .title {
+        font-size: 18px;
+    } 
+    .bannersection .leftSection .homeWorthSection .subtitle {
+        font-size: 15px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox {
+        padding: 15px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox {
+        padding-right: 5px!important;
+        padding: 5px;
+        padding-bottom: 60px;
+        border-radius: 5px;
+        border: 1px solid #d5d5d552;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox .ShowMeNow {
+        width: calc(100% - 20px);
+        right: 10px;
+        bottom: 4px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox .form-control {
+        border-bottom: 1px solid #d5d5d557;
+        border-radius: 0;
+        max-width: 100%;
+    }
+    .bannersection .rightSection {
+        width: 100%;
+        display: flex;
+        min-height:350px;
+        padding: 25px;
+        align-items: center;
+        order: 1;
+    }
+            
+    .bannersection .leftSection .homeWorthSection .title {
+        font-size: 17px;
+        font-weight: 700;
+    }
+        .bannersection .leftSection .homeWorthSection .worthBox .googleRating{
+            font-size: 15px;
+        }
+    .bannersection .rightSection .serchingHome .serchHome {
+       
+    padding: 13px;
+       
+    height: 54px;
+       
+    line-height: 54px;
+       
+    font-size: 15px;
+    }
+    .bannersection .rightSection .serchingHome .serchNear {
+       
+    height: 45px;
+       
+    line-height: 41px;
+       
+    padding: 0 15px;
+       
+    font-size: 15px;
+    }  
+    .bannersection .rightSection .serchingHome .serchNear img {
+        width: 20px;
+    }    
+        
+     .packageSection .TabulerBox {
+        width:calc(100% - 30px);
+        max-width: 540px;
+        top: 0px;
+    }   
+    .packageSection .tab-content {
+        padding: 30px 15px 50px 15px;
+    }
+    .packageSection .TabulerBox .title {
+        font-size: 18px;
+    }
+    .packageContent .packContent .headingTitle {
+        font-size: 18px;
+    }  
+    .packageContent .packContent .priceSlider .SelectValue {
+        font-size: 15px;
+    }    
+    .packageContent .packContent .priceSlider .SelectValue span {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 0px;
+       
+    }    
+    .packageContent .packContent .priceSlider {
+        padding: 20px 0;
+    }
+    .packageContent .packContent .priceSlider .SavedPrice{
+            font-size: 15px;
+    } 
+    .freeServices {
+        padding: 20px 0px;
+    } 
+    .freeServices .headindBox{
+        display: block;
+        }
+    .freeServices .headindBox .RightT {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .getServices ul li {
+        display: inline-block;
+        width: 33%;
+    }
+    .getServices ul li .serviceBx{
+            font-size: 14px;
+            padding-left: 40px!important;
+        padding: 10px 5px;
+        }
+    .getServices ul li .serviceBx img {
+        position: absolute;
+        left: 7px;
+        width: 40px;
+        top: 18px;
+    }
+    .getServices ul li .serviceBx span{
+        font-size: 18px;
+    } 
+    .freeServices .freeContentBox{
+        margin-bottom: 0px;
+    } 
+        .hotListingProject{
+            display: block;
+        }    
+    .leftSection {
+        padding: 15px;
+        width: 100%;
+       
+    }
+    .leftSection .titleContent .mainTitle{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+    .rightSection {
+        width: 100%;
+        padding: 30px 15px;
+    } 
+    .rightSection ul .nav-item .nav-link {
+       
+    font-size: 15px;
+       
+    padding: 13px 10px;
+       
+    font-weight: 500;
+    } 
+    .rightSection .tab-content{
+        padding:15px;
+    } 
+    .townHomesStat {
+        padding: 15px;
+    }
+    .townHomesStat .mainTitle .HeadTitle {
+        font-size: 36px;
+        margin-bottom: 10px;
+    } 
+    .townHomesStat .mainTitle .subTitle{
+        font-size: 14px;
+    }
+    .townHomesStat .statsAverageBox {
+        padding: 15px;
+        margin-bottom: 12px;
+    } 
+    .townHomesStat .statsAverageBox .heading {
+        font-size: 18px;    
+    }
+      .averageBox .averageTitlebox {
+       
+        height: 54px;
+        line-height: 54px;
+        font-size: 13px;
+    } 
+    .averageBox .averageTitlebox span {
+        font-size: 16px;
+    }
+        .timeHomeratio{
+            border-right:0px;
+        }  
+    .leftSection .titleContent .subTitle {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }    
+        
+    .blogPanel .blogContent {
+        margin-bottom: 15px;
+    }
+    .blogPanel .blogContent .blogInnerContent .title{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }  
+    .blogPanel .blogContent .blogInnerContent .subtitle{
+        font-size: 13px;
+    }    
+    
+    .blogPanel .blogContent .blogPic{
+        height: 170px;
+    }  
+    .hotListBox .hotProjectBox .projectDetails .homePro ul li {
+        margin-right: 8px;
+    }    
+        
+            
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    @media (min-width: 768px) and (max-width: 991px){
+    .topBar {
+        z-index: 1051;
+    }
+        .topBar .navbar .navbar-toggler {
+        border-color: #f89e37;
+    }
+    .topBar .navbar .navbar-brand img {
+        width: 40px;
+        margin-left: 0px;
+    }
+    .topBar .navbar .serchForm {
+       padding: 5px 2px 5px 30px;
+       font-size: 13px;
+       margin-left: 0;
+       box-shadow: 0px 0px 15px 0px #d5d5d542;
+       border-radius: 21px;
+    }
+    .topBar .navbar .serchForm input {
+       
+        font-size: 10px;
+    }
+    .topBar .navbar .serchForm img {
+        position: absolute;
+        left: 9px;
+        top: 8px;
+        width: 16px;
+    }
+    .topBar .navbar .navbar-collapse {
+        width: 100%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: 49px;
+        box-shadow: 0px 5px 17px 0px #d5d5d540;
+    }
+    .leftTitleBox {
+        transform: translate3d(0%, 0px, 10px);
+        top: 50px;
+        max-width: 430px;
+        width: 90%;
+        padding: 15px 10px;
+        margin-right: 25px;
+        overflow: inherit;
+        transition: all .2s ease;
+        max-height: calc(100vh - 50px);
+    }
+    .leftTitleBox.full-sidebar {
+        transform: translate3d(-100%, 0px, 10px);
+        top: 50px;
+        max-width: 430px;
+        width: 90%;
+        padding: 15px 10px;
+        margin-right: 25px;
+        overflow: inherit;
+        transition: all .2s ease;
+    }
+    .topBar .navbar .navbar-collapse .navbar-nav {
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+    }
+    .topBar .navbar .navbar-brand {
+        margin-right: 0;
+    }
+    .topBar .navbar {
+        padding: 0px 10px;
+    }
+    .topBar .navbar .navbar-collapse .navbar-nav .nav-link {
+       
+    padding: 0 10px;
+       
+    height: 40px;
+       
+    line-height: 40px;
+       
+    width: 100%;
+    }
+    .topBar .navbar .headerBtn {
+        height: 40px;
+        border-radius: 0px;
+        padding: 0 22px;
+        background: #f89e37;
+        line-height: 40px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .leftTitleBox .topTitleAction .leftSide {
+        float: left;
+        font-size: 21px;
+    }
+    .leftTitleBox .titleDiscriptions .contentBox {
+        font-size: 12px;
+    }
+    .leftTitleBox .titleDiscriptions .actionBtn .orageBtn {
+       
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        padding: 0px 15px;
+        
+    }
+    .leftTitleBox .topTitleAction .rightSide .stageDrop {
+     
+        max-width: 100px;
+    }
+    .bookAppo .modal-body {
+        border-radius: 0px!important;
+        padding: 15px;
+    }
+    .bookAppo .modal-body {
+        border-radius: 0px!important;
+        padding: 15px;
+    }
+    .bookAppo .modal-body .headerContent .title {
+        font-size: 24px;
+    }
+    .bookAppo .modal-body .headerContent .subtitleContent {
+     
+        font-size: 14px;
+    }
+    .bookAppo {
+        width: 100%;
+        max-width: 431px;
+        top: 60px;
+        transform: translateY(0%)!important;
+        margin:0px;
+    }
+    .bookAppo .modal-body .form .input-form .input-field .form-control {
+        height: 38px;
+        line-height: 38px;
+    }
+    .bookAppo .modal-content {
+        border-radius: 5px;
+    }
+    .leftTitleBox.full-sidebar .tglBtn {
+        right: -30px;
+    }
+     .tglBtn {
+        display: block;
+    }
+    .cityBox {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 10px 0;
+        overflow-y: scroll!important;
+        height: calc(100vh - 120px);
+    }
+    .cityBox .regionsBox .cityNameTitle .cityName {
+        font-size: 13px;
+        color: #757575;
+    }
+    .bannerBox .leftSidebox {
+        padding: 58px 10px 30px 10px;
+        width: 100%;
+        order: 2;
+    }
+    .bannerBox .leftSidebox .leftPanel {
+        width: 79%;
+    }
+    .bannerBox .leftSidebox .leftPanel .projectTitle {
+        font-size: 35px;
+    }
+    .bannerBox .downloadZip {
+       
+        top: 7px;
+        font-size: 11px;
+        padding: 5px 13px;
+    }
+    .bannerBox .downloadZip img {
+        width: 15px;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos {
+        padding: 10px 0;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos .potionsBox {
+        padding: 25px;
+        padding-left: 85px;
+        font-size: 24px;
+    }
+    .bannerBox .leftSidebox .rightPanel {
+        width: 20%;
+        float: left;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step {
+        width: 100%;
+        margin-bottom: 5px;
+        border-bottom: 1px dashed #d5d5d585;
+        padding: 5px;
+    }
+    .bannerBox .leftSidebox .rightPanel .Step:last-child {
+         border-right:none;
+        }
+    .bannerBox .leftSidebox .rightPanel .Step span {
+        font-size: 22px;
+    }
+    .bannerBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .rightSideBox {
+        width: 100%;
+        order: 1;
+    }
+    .rightSideBox .buildingContentBox .carousel-control-prev {
+        width: 30px;
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .carousel-control-next {
+        width: 30px;
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .sliderBg {
+        height: 360px;
+    }
+    .bannerBox .leftSidebox:before{
+        display: none;
+    }
+    .rightSideBox .buildingContentBox .carousel-indicators li {
+        width: 60px;
+        height: 60px;
+        border: 2px solid #fff;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link{
+        font-size: 12px;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:before {
+        position: absolute;
+        content: "";
+        border-left: 36px solid #f89e37;
+        border-top: 39px solid transparent;
+        top: -1px;
+        right: -36px;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:after {
+        position: absolute;
+        content: "";
+        border-right: 36px solid #f89e37;
+        border-bottom: 39px solid transparent;
+        top: 0px;
+        left: -36px;
+    }
+    .ctaForm{
+        display: none;
+    }
+    .ctaBox .ctaForm{
+        display: block!important;
+    }
+    
+    .show .modal-dialog.btmPopUp {
+        max-width: calc(100% - 0px);
+        margin: 0;
+        width: 100%;
+        right: 0;
+        float: right;
+        bottom: 0;
+        max-height: 381px;
+        min-height: 381px;
+        transform: translate3d(0px, -100%, 0px)!important;
+        top: 100%;
+    }
+    .modal-dialog.btmPopUp {
+        transform: translate3d(0px, 0%, 0px)!important;
+        max-width: calc(100% - 0px);
+        margin: 0;
+        width: 100%;
+        right: 0;
+        float: right;
+        bottom: 0;
+        max-height: 381px;
+        top: 100%;
+        min-height: 381px;
+    }
+    
+    .modal-backdrop.show {
+        opacity: .1;
+        z-index: 1051;
+    }
+    #bottomPop{
+        z-index: 1052;
+    }
+                
+    .bannersection {
+        width: 100%;
+        float: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .bannersection .leftSection {
+    width: 100%;
+    padding: 15px;
+        order: 2;
+    }
+    .bannersection .leftSection .headingTitle {
+        font-size: 50px;
+        line-height: 61px;
+        margin-bottom: 30px;
+    }
+    .bannersection .leftSection .bannerSubtitle {
+        margin-bottom: 26px;
+        max-width: 100%;
+    }
+    .bannersection .leftSection .homeWorthSection .title {
+        font-size: 18px;
+    } 
+    .bannersection .leftSection .homeWorthSection .subtitle {
+        font-size: 16px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox {
+        padding: 15px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox {
+        padding-right: 160px!important;
+        padding: 5px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        border: 1px solid #d5d5d552;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox .ShowMeNow {
+        width: 140px;
+        bottom: auto;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox .form-control {
+        border-radius: 0;
+        float: left;
+        max-width: 270px;
+    }
+    .bannersection .rightSection {
+        width: 100%;
+        display: flex;
+        min-height: 420px;
+        padding: 25px;
+        align-items: center;
+        order: 1;
+    }
+            
+    .bannersection .leftSection .homeWorthSection .title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+        .bannersection .leftSection .homeWorthSection .worthBox .googleRating{
+            font-size: 15px;
+        }
+    .bannersection .rightSection .serchingHome .serchHome {
+       
+    padding: 13px;
+       
+    height: 54px;
+       
+    line-height: 54px;
+       
+    font-size: 15px;
+    }
+    .bannersection .rightSection .serchingHome .serchNear {
+       
+    height: 45px;
+       
+    line-height: 41px;
+       
+    padding: 0 15px;
+       
+    font-size: 15px;
+    }  
+    .bannersection .rightSection .serchingHome .serchNear img {
+        width: 20px;
+    }    
+        
+     .packageSection .TabulerBox {
+        width:calc(100% - 30px);
+        max-width: 540px;
+        top: 0px;
+    }   
+    .packageSection .tab-content {
+        padding: 30px 15px 50px 15px;
+    }
+    .packageSection .TabulerBox .title {
+        font-size: 18px;
+    }
+    .packageContent .packContent .headingTitle {
+        font-size: 18px;
+    }  
+    .packageContent .packContent .priceSlider .SelectValue {
+        font-size: 15px;
+    }    
+    .packageContent .packContent .priceSlider .SelectValue span {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 0px;
+       
+    }    
+    .packageContent .packContent .priceSlider {
+        padding: 20px 0;
+    }
+    .packageContent .packContent .priceSlider .SavedPrice{
+            font-size: 15px;
+    } 
+    .freeServices {
+        padding: 20px 0px;
+    } 
+    .freeServices .headindBox{
+        display: block;
+        }
+    .freeServices .headindBox .RightT {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .getServices ul li {
+        display: inline-block;
+        width: 50%;
+    }
+    .getServices ul li .serviceBx{
+            font-size: 14px;
+            padding-left: 40px!important;
+        padding: 10px 5px;
+        }
+    .getServices ul li .serviceBx img {
+        position: absolute;
+        left: 7px;
+        width: 40px;
+        top: 18px;
+    }
+    .getServices ul li .serviceBx span{
+        font-size: 18px;
+    } 
+    .freeServices .freeContentBox{
+        margin-bottom: 0px;
+    } 
+        .hotListingProject{
+            display: block;
+        }    
+    .leftSection {
+        padding: 45px 15px;
+        width: 100%;
+        float: left;
+    }
+    .leftSection .titleContent .mainTitle{
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .rightSection {
+        width: 100%;
+        padding: 30px 15px;
+    } 
+    .rightSection ul .nav-item .nav-link {
+       
+    font-size: 15px;
+       
+    padding: 13px 10px;
+       
+    font-weight: 500;
+    } 
+    .rightSection .tab-content{
+        padding:15px;
+    } 
+    .townHomesStat {
+        padding: 15px;
+    }
+    .townHomesStat .mainTitle .HeadTitle {
+        font-size: 36px;
+        margin-bottom: 10px;
+    } 
+    .townHomesStat .mainTitle .subTitle{
+        font-size: 14px;
+    }
+    .townHomesStat .statsAverageBox {
+        padding: 15px;
+        margin-bottom: 12px;
+    } 
+    .townHomesStat .statsAverageBox .heading {
+        font-size: 18px;    
+    }
+      .averageBox .averageTitlebox {
+       
+        height: 54px;
+        line-height: 54px;
+        font-size: 13px;
+    } 
+    .averageBox .averageTitlebox span {
+        font-size: 16px;
+    }
+        .timeHomeratio{
+            border-right:0px;
+            padding-top: 20px;
+        }  
+    .leftSection .titleContent .subTitle {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }    
+        
+    .blogPanel .blogContent {
+        margin-bottom: 15px;
+    }
+        .blogPanel .blogContent .blogInnerContent .title{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }  
+        .blogPanel .blogContent .blogInnerContent .subtitle{
+            font-size: 13px;
+            min-height: 100px;
+        }
+    .timeHomeratio .smallText {
+        font-size: 14px;
+    }
+        .blogPanel .blogContent .blogPic{
+            height: 140px;
+        }      
+    }
+    
+    
+    @media (min-width: 992px) and (max-width: 1199px){
+        .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link{
+        font-size: 12px;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:before {
+        position: absolute;
+        content: "";
+        border-left: 36px solid #f89e37;
+        border-top: 39px solid transparent;
+        top: -1px;
+        right: -36px;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:after {
+        position: absolute;
+        content: "";
+        border-right: 36px solid #f89e37;
+        border-bottom: 39px solid transparent;
+        top: 0px;
+        left: -36px;
+    }
+    .bannerBox .leftSidebox {
+        width: 50%;
+    }
+    .rightSideBox {
+        width: 50%;
+    }
+    .bannerBox .leftSidebox .leftPanel {
+        width: 70%;
+    }
+    .bannerBox .leftSidebox .rightPanel {
+        width: 30%;
+        float: left;
+    }
+    .bannerBox .leftSidebox .leftPanel .projectTitle{
+        font-size: 34px;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos .potionsBox {
+        padding: 16px;
+        font-size: 20px;
+        padding-left: 80px;
+        }
+    .innerContentzone .peraContent .facts .factList .lableTask .leftLable {
+        min-width: 200px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .floreBoxPanel .floreBox .headingTitle {
+        font-size: 19px;
+    }
+                
+    .bannersection .leftSection .headingTitle {
+        font-size: 54px;
+        line-height: 66px;
+    }
+    .bannersection .leftSection {
+        padding: 30px;
+    }
+    .bannersection .leftSection .bannerSubtitle {
+        margin-bottom: 20px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox {
+        padding: 15px;
+    }
+        .bannersection .leftSection .homeWorthSection .worthBox .formbox{
+            border-radius: 10px;
+            padding-right: 5px!important;
+            padding-bottom: 50px;
+        }    
+        
+        .bannersection .leftSection .homeWorthSection .worthBox .formbox .ShowMeNow {
+        width: calc(100% - 20px);
+        right: 10px;
+        bottom: 4px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox .form-control {
+        max-width: 100%;
+        border-bottom: 1px solid #d5d5d552;
+        border-radius: 0;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .googleRating{
+        font-size: 15px;
+    }
+        .packageSection .TabulerBox{
+            top:-10px;
+        } 
+    .getServices ul li {
+        width: 47%;
+        float: left;
+        margin: 5px;
+    } 
+    .packageSection .tab-content {
+        padding: 30px 30px 50px 30px;
+    } 
+    .freeServices {
+        padding: 0 20px;
+    }  
+    .freeServices .headindBox .leftT {
+        font-size: 24px;
+    } 
+    .freeServices .headindBox .RightT {
+        font-size: 14px;
+    }
+    .freeServices .headindBox {
+        display: block;
+    }
+    .packageContent .packContent .headingTitle {
+        font-size: 24px;
+    }    
+        .getServices ul li .serviceBx img{
+            width:40px;
+        } 
+        .mobileview{
+            display: none;
+        } 
+    .rightSection ul .nav-item .nav-link {
+        
+        font-size: 15px;
+        padding: 15px 12px;
+    }  
+        .leftSection{
+            padding: 30px;
+            width: 36%;
+        }
+        .rightSection{
+            padding: 30px 30px;
+            width: 64%;
+        } 
+        .leftSection .titleContent .mainTitle{
+            font-size: 30px;
+        }   
+        .townHomesStat .statsAverageBox .heading{
+            font-size: 18px;
+        }
+        .timeHomeratio .boldText.orange {
+            font-size: 42px;
+        }
+        .timeHomeratio .smallText {
+        font-size: 14px;
+    }
+        .blogPanel .blogContent .blogPic{
+            height: 180px;
+        }
+        .blogPanel .blogContent .blogInnerContent .title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+        .blogPanel .blogContent .blogInnerContent .subtitle{
+            font-size: 14px;
+                min-height: 100px;
+        }
+        
+        
+        
+    }
+    
+    @media (min-width: 1200px) and (max-width: 1440px){
+        .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link{
+        font-size: 12px;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:before {
+        position: absolute;
+        content: "";
+        border-left: 36px solid #f89e37;
+        border-top: 39px solid transparent;
+        top: -1px;
+        right: -36px;
+    }
+    .tabulerBox .tabulerStep .nav-tabs .nav-item .nav-link.active:after {
+        position: absolute;
+        content: "";
+        border-right: 36px solid #f89e37;
+        border-bottom: 39px solid transparent;
+        top: 0px;
+        left: -36px;
+    }
+    .bannerBox .leftSidebox {
+        width: 50%;
+    }
+    .rightSideBox {
+        width: 50%;
+    }
+    .bannerBox .leftSidebox .leftPanel {
+        width: 70%;
+    }
+    .bannerBox .leftSidebox .rightPanel {
+        width: 30%;
+        float: left;
+    }
+    .bannerBox .leftSidebox .leftPanel .projectTitle{
+        font-size: 34px;
+    }
+    .bannerBox .leftSidebox .leftPanel .stagePos .potionsBox {
+        padding: 16px;
+        font-size: 20px;
+        padding-left: 80px;
+        }
+    .innerContentzone .peraContent .facts .factList .lableTask .leftLable {
+        min-width: 200px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .floreBoxPanel .floreBox .headingTitle {
+        font-size: 19px;
+    }
+        
+        
+        
+    .bannersection .leftSection .headingTitle {
+        font-size: 54px;
+        line-height: 66px;
+    }
+    .bannersection .leftSection {
+        padding: 30px;
+    }
+    .bannersection .leftSection .bannerSubtitle {
+        margin-bottom: 20px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox {
+        padding: 15px;
+    }
+        .bannersection .leftSection .homeWorthSection .worthBox .formbox{
+            border-radius: 10px;
+            padding-right: 5px!important;
+            padding-bottom: 50px;
+        }    
+        
+        .bannersection .leftSection .homeWorthSection .worthBox .formbox .ShowMeNow {
+        width: calc(100% - 20px);
+        right: 10px;
+        bottom: 4px;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .formbox .form-control {
+        max-width: 100%;
+        border-bottom: 1px solid #d5d5d552;
+        border-radius: 0;
+    }
+    .bannersection .leftSection .homeWorthSection .worthBox .googleRating{
+        font-size: 15px;
+    }
+        .packageSection .TabulerBox{
+            top:-10px;
+        } 
+    .getServices ul li {
+        width: 47%;
+        float: left;
+        margin: 5px;
+    } 
+    .packageSection .tab-content {
+        padding: 30px 30px 50px 30px;
+    } 
+    .freeServices {
+        padding: 0 20px;
+    }  
+    .freeServices .headindBox .leftT {
+        font-size: 24px;
+    } 
+    .freeServices .headindBox .RightT {
+        font-size: 14px;
+    }
+    .freeServices .headindBox {
+        display: block;
+    }
+    .packageContent .packContent .headingTitle {
+        font-size: 24px;
+    }    
+        .getServices ul li .serviceBx img{
+            width:40px;
+        } 
+        .mobileview{
+            display: none;
+        } 
+    .rightSection ul .nav-item .nav-link {
+        
+        font-size: 15px;
+        padding: 15px 12px;
+    }  
+        .leftSection{
+            padding: 30px;
+            width: 36%;
+        }
+        .rightSection{
+            padding: 30px 30px;
+            width: 64%;
+        } 
+        .leftSection .titleContent .mainTitle{
+            font-size: 30px;
+        }   
+        .townHomesStat .statsAverageBox .heading{
+            font-size: 18px;
+        }
+        .timeHomeratio .boldText.orange {
+            font-size: 42px;
+        }
+        .timeHomeratio .smallText {
+        font-size: 14px;
+    }
+        .blogPanel .blogContent .blogPic{
+            height: 180px;
+        }
+        .blogPanel .blogContent .blogInnerContent .title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+        .blogPanel .blogContent .blogInnerContent .subtitle{
+            font-size: 14px;
+                min-height: 100px;
+        }    
+        
+    }
+    @media (min-width: 1441px) and (max-width: 1880px){
+        .bannersection .leftSection .homeWorthSection .worthBox .formbox .form-control{
+            max-width: 204px;
+        }
+    }
+    
+    .select-container .rightSide .stageDrop {
+        background: #f89e37;
+        border-color: #f89e37;
+        color: #fff;
+        font-size: 13px;
+        border-radius: 15px;
+        padding: 0px 10px;
+        box-shadow: none;
+        outline: none;
+    }

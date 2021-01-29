@@ -1,0 +1,66 @@
+export default {
+  bedOptions: [
+    { value: '1', label: '1 Bed' },
+    { value: '2', label: '2 Beds' },
+    { value: '3', label: '3 Beds' },
+    { value: '4', label: '4 Beds' },
+    { value: '5', label: '5 Beds' },
+    { value: '6', label: '6 Beds' },
+  ],
+  bathOptions: [
+    { value: '1', label: '1 Bath' },
+    { value: '2', label: '2 Baths' },
+    { value: '3', label: '3 Baths' },
+    { value: '4', label: '4 Baths' },
+    { value: '5', label: '5 Baths' },
+    { value: '6', label: '6 Baths' },
+  ],
+  typeOptions: [
+    {value: "RES", label: "Freehold"},
+    {value: "CND", label: "Condo"},
+  ],
+  propertyOptions: [
+    {value: "Att/Row/Twnhouse", label: "Townhouse"},
+    {value: "Condo Townhouse", label: "Condo Townhouse"},
+    {value: "Co-Op Apt", label: "Co-Op Apt"},
+    {value: "Det. Condo", label: "Det. Condo"},
+    {value: "Duplex", label: "Duplex"},
+    {value: "Triplex", label: "Triplex"},
+    {value: "Fourplex", label: "Fourplex"},
+    {value: "Multiplex", label: "Multiplex"},
+    {value: "Semi-Detached", label: "Semi-Detached"},
+    {value: "Semi-Det Condo", label: "Semi-Detached Condo"},
+    {value: "Store W/Apt/Offc", label: "Store W/Apt/Offc"}
+  ],
+  minPriceOptions: [
+    { value: '', label: 'Any' },
+    { value: '400000', label: '$400,000' },
+    { value: '500000', label: '$500,000' },
+    { value: '600000', label: '$600,000' },
+    { value: '700000', label: '$700,000' },
+    { value: '800000', label: '$800,000' },
+    { value: '900000', label: '$900,000' },
+    { value: '1000000', label: '$1,000,000' },
+    { value: '1250000', label: '$1,250,000' },
+    { value: '1500000', label: '$1,500,000' },
+    { value: '1750000', label: '$1,750,000' }
+  ],
+  maxPriceOptions: [
+    { value: '', label: 'Any' },
+    { value: '400000', label: '$400,000' },
+    { value: '500000', label: '$500,000' },
+    { value: '600000', label: '$600,000' },
+    { value: '700000', label: '$700,000' },
+    { value: '800000', label: '$800,000' },
+    { value: '900000', label: '$900,000' },
+    { value: '1000000', label: '$1,000,000' },
+    { value: '1250000', label: '$1,250,000' },
+    { value: '1500000', label: '$1,500,000' },
+    { value: '1750000', label: '$1,750,000' },
+    { value: '2000000', label: '$2,000,000' },
+    { value: '3000000', label: '$3,000,000' },
+    { value: '4000000', label: '$4,000,000' },
+    { value: '5000000', label: '$5,000,000' },
+    { value: '6000000', label: '$6,000,000' }
+  ]
+}
