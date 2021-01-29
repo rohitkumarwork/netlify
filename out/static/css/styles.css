@@ -1,0 +1,4026 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.row {
+  margin-right: -8px;
+  margin-left: -7px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  border-radius: 5px;
+}
+
+.input-theme {
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.checkbox-theme {
+  padding-left: 30px !important;
+}
+
+.checkbox-theme label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 0px;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 16px;
+  color: #777777;
+}
+
+.checkbox-theme label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  margin-left: -25px;
+  margin-top: 0px;
+  border: 1px solid #e8e8e8;
+  border-radius: 1px;
+  background-color: #e8ecef42;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.checkbox-theme label::after {
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 1px;
+  top: 0px;
+  margin-left: -26px;
+  font-size: 10px;
+  color: #ffffff;
+  line-height: 20px;
+  text-align: center;
+  border: none !important;
+  border-radius: 0px;
+  background: #ef9835;
+}
+
+.checkbox-theme input[type="checkbox"] {
+  opacity: 0;
+  z-index: 1;
+  margin: 0px 0px 0px -22px;
+  cursor: pointer;
+}
+
+.checkbox-theme input[type="checkbox"]:focus + label::before {
+  outline: none;
+}
+
+.checkbox-theme input[type="checkbox"]:checked + label::after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+
+.wd {
+  width: 100%;
+}
+
+.btn-orange {
+  height: 50px;
+  line-height: 2.2em !important;
+  padding: 0 50px;
+  font-size: 13px;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: #f89e37 !important;
+  color: #fff !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-outline {
+  background: transparent !important;
+  font-size: 13px;
+  border: 1px solid #e4801c;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 50px;
+  font-weight: 600;
+  color: #e4801c;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.btn-outline:hover {
+  background-color: #e4801c !important;
+  color: #fff;
+}
+
+.leftTitleBox::-webkit-scrollbar,
+.leftSection::-webkit-scrollbar {
+  width: 5px;
+}
+
+.leftTitleBox::-webkit-scrollbar-thumb,
+.leftSection::-webkit-scrollbar-thumb {
+  background-color: #f89e37;
+  outline: 1px solid #f89e37;
+  border-radius: 30px;
+}
+
+.topBar .navbar .headerBtn {
+  height: 66px;
+  border-radius: 0px;
+  padding: 0 22px;
+  background: #f89e37;
+}
+
+.topBar {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  padding: 0 0px;
+  right: 0;
+  float: left;
+}
+
+.topBar .navbar {
+  background: #ffffff00 !important;
+  box-shadow: 0px 0px 10px 0px #d5d5d5;
+  padding: 0;
+}
+
+.topBar .navbar .navbar-brand img {
+  width: 40px;
+  margin-left: 30px;
+}
+
+.topBar .navbar .navbar-collapse .navbar-nav .nav-item {
+  align-items: center;
+  vertical-align: middle;
+  display: flex;
+}
+
+.topBar .navbar .navbar-toggler {
+  border-color: #fff;
+  padding: 4px;
+  font-size: 15px;
+}
+
+.topBar .navbar .navbar-collapse .navbar-nav .nav-link {
+  align-items: center;
+  vertical-align: middle;
+  color: #5d5d5d;
+  padding: 0 10px;
+  height: 66px;
+  line-height: 66px;
+  font-size: 13px;
+}
+
+.topBar .navbar .navbar-collapse .navbar-nav .nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+.topBar .navbar .navbar-collapse .navbar-nav .nav-link img {
+  width: 30px;
+}
+
+.topBar .navbar .serchForm {
+  margin-left: 15px;
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 0px #d5d5d59e;
+  padding: 5px 2px 5px 50px;
+  min-width: 300px;
+}
+
+.topBar .navbar .serchForm input {
+  border: 0;
+  font-size: 13px;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.topBar .navbar .serchForm input::placeholder {
+  color: #d5d5d5;
+}
+
+.topBar .navbar .serchForm img {
+  position: absolute;
+  left: 13px;
+  top: 8px;
+  width: 22px;
+}
+
+.footer {
+  width: 100%;
+  float: left;
+  position: relative;
+  background: #fff;
+  padding: 0px 30px;
+  box-shadow: 0px 0px 2px 0px #d5d5d5;
+}
+
+.footer .footerContent {
+  display: flex;
+  width: 100%;
+  float: left;
+  align-items: center;
+  padding: 14px 0;
+  justify-content: space-between;
+}
+
+.footer .footerContent .leftSide {
+  float: left;
+}
+
+.footer .footerContent .leftSide img {
+  width: 168px;
+}
+
+.footer .footerContent .rightSide {
+  display: flex;
+  position: relative;
+}
+
+.footer .footerContent .rightSide ul {
+  display: flex;
+  position: relative;
+}
+
+.footer .footerContent .rightSide ul li {
+  margin-left: 15px;
+}
+
+.footer .footerContent .rightSide ul li a {
+  color: #888888;
+  font-size: 21px;
+}
+
+/*homepageSection*/
+.bannersection {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.bannersection .leftSection {
+  width: 50%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 50px;
+}
+.bannersection .leftSection .headingTitle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 66px;
+
+  font-weight: 700;
+
+  color: #363636;
+
+  line-height: 80px;
+
+  margin-bottom: 30px;
+}
+.bannersection .leftSection .headingTitle span {
+  color: #f89e37;
+}
+.bannersection .leftSection .bannerSubtitle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-bottom: 50px;
+
+  max-width: 500px;
+
+  line-height: 30px;
+}
+.bannersection .leftSection .homeWorthSection {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.bannersection .leftSection .homeWorthSection .title {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 24px;
+
+  font-weight: 500;
+}
+.bannersection .leftSection .homeWorthSection .subtitle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  margin-bottom: 20px;
+}
+.bannersection .leftSection .homeWorthSection .worthBox {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 25px;
+
+  box-shadow: 0px 0px 15px 0px #d5d5d559;
+
+  border-radius: 10px;
+}
+.bannersection .leftSection .homeWorthSection .worthBox .formbox {
+  width: 100%;
+
+  position: relative;
+
+  border: 1px solid #d5d5d5;
+
+  display: inline-block;
+
+  padding-right: 155px !important;
+
+  padding: 5px;
+
+  margin-bottom: 20px;
+
+  border-radius: 30px;
+}
+.bannersection .leftSection .homeWorthSection .worthBox .formbox .form-control {
+  border: 0;
+
+  outline: none;
+
+  box-shadow: none;
+
+  padding: 0 15px;
+
+  max-width: 316px;
+
+  float: left;
+
+  line-height: 40px;
+
+  height: 40px;
+
+  background: transparent;
+
+  width: 100%;
+
+  font-size: 14px;
+}
+.bannersection .leftSection .homeWorthSection .worthBox .formbox .ShowMeNow {
+  background: #f89e37;
+
+  width: 140px;
+
+  position: absolute;
+
+  right: 7px;
+
+  height: 40px;
+
+  line-height: 40px;
+
+  text-align: center;
+
+  color: #fff;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+}
+.bannersection .leftSection .homeWorthSection .worthBox .googleRating {
+  width: 100%;
+
+  float: left;
+
+  text-align: center;
+
+  font-size: 19px;
+
+  font-weight: 600;
+}
+.bannersection .leftSection .homeWorthSection .worthBox .googleRating i {
+  color: #ffa53e;
+
+  margin: 0px 3px;
+}
+.bannersection .leftSection .homeWorthSection .worthBox .googleRating img {
+  padding: 8px;
+
+  width: 110px;
+}
+.bannersection .rightSection {
+  width: 50%;
+
+  float: left;
+
+  position: relative;
+
+  height: 100%;
+
+  display: flex;
+
+  min-height: 777px;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  padding: 100px;
+
+  align-items: center;
+}
+.bannersection .rightSection .serchingHome {
+  width: 100%;
+
+  text-align: center;
+
+  display: flex;
+
+  align-items: center;
+
+  vertical-align: baseline;
+
+  flex-direction: column;
+}
+.bannersection .rightSection .serchingHome .serchHome {
+  width: 100%;
+
+  padding: 15px;
+
+  text-align: center;
+
+  border-radius: 8px;
+
+  border: 0;
+
+  height: 60px;
+
+  line-height: 60px;
+
+  margin-bottom: 25px;
+
+  font-size: 18px;
+
+  font-weight: 300;
+
+  max-width: 560px;
+}
+.bannersection .rightSection .serchingHome .serchNear {
+  background: #f89e37f0;
+
+  height: 56px;
+
+  line-height: 55px;
+
+  padding: 0 30px;
+
+  border-radius: 10px;
+
+  border: 2px solid #fff;
+
+  color: #ffff;
+}
+.bannersection .rightSection .serchingHome .serchNear img {
+  width: 25px;
+
+  margin-right: 8px;
+}
+
+.packageSection {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.packageSection .TabulerBox {
+  width: 100%;
+
+  max-width: 540px;
+
+  margin: 0 auto;
+
+  background: #fff;
+
+  border-radius: 10px;
+
+  position: relative;
+
+  top: -49px;
+
+  box-shadow: 0px 0px 24px 0px #1717171a;
+
+  display: table;
+
+  overflow: hidden;
+}
+.packageSection .TabulerBox .title {
+  width: 100%;
+
+  float: left;
+
+  text-align: center;
+
+  padding: 16px;
+
+  font-size: 21px;
+
+  font-weight: 600;
+
+  color: #f89e37;
+}
+.packageSection .TabulerBox .nav-pills {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: space-around;
+
+  margin-bottom: 0px;
+
+  border-top: 1px solid #d5d5d538;
+}
+.packageSection .TabulerBox .nav-pills .nav-item {
+  width: 50%;
+
+  background: transparent;
+}
+.packageSection .TabulerBox .nav-pills .nav-item .nav-link {
+  background: transparent;
+
+  color: #a0a0a0;
+
+  text-align: center;
+
+  border-bottom: 6px solid #bbbbbb;
+
+  border-radius: 0;
+
+  font-weight: 400;
+
+  padding: 0 15px;
+
+  height: 56px;
+
+  line-height: 47px;
+  cursor: pointer;
+}
+.packageSection .TabulerBox .nav-pills .nav-item .nav-link.active {
+  border-color: #f89e37;
+
+  color: #f89e37;
+}
+.packageSection .tab-content {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 0 50px 50px 50px;
+}
+.packageContent {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.packageContent .packContent {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.packageContent .packContent .headingTitle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 30px;
+
+  font-weight: 500;
+
+  margin-bottom: 10px;
+  text-align: center;
+}
+.packageContent .packContent .priceSlider {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  text-align: center;
+
+  padding: 20px;
+}
+.packageContent .packContent .priceSlider .SelectValue {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 22px;
+}
+.packageContent .packContent .priceSlider .SelectValue span {
+  width: 100%;
+
+  float: left;
+
+  font-size: 40px;
+
+  font-weight: 200;
+
+  margin-bottom: 25px;
+
+  color: #f89e37;
+}
+.packageContent .packContent .priceSlider .SlidePanle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-bottom: 38px;
+
+  margin-top: 30px;
+}
+.packageContent .packContent .priceSlider .SlidePanle .inputSlide {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  overflow: hidden;
+
+  height: 20px;
+}
+.packageContent .packContent .priceSlider .SlidePanle .inputSlide input {
+  width: 100%;
+}
+
+.packageContent
+  .packContent
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input[type="range"] {
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  height: 20px;
+  width: 100%;
+  cursor: pointer;
+  /* iOS */
+}
+
+.packageContent
+  .packContent
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input::-webkit-slider-runnable-track {
+  background: #ddd;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+.packageContent
+  .packContent
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; /* 1 */
+  height: 20px;
+  background: #fff;
+  box-shadow: -100vw 0 0 100vw #f89e37;
+  border: 2px solid #999; /* 1 */
+}
+
+.packageContent
+  .packContent
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input::-moz-range-track {
+  height: 20px;
+  background: #ddd;
+}
+
+.packageContent
+  .packContent
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input::-moz-range-thumb {
+  background: #f89e37;
+  height: 30px;
+  width: 30px;
+  border: 3px solid #fff;
+  border-radius: 50% !important;
+  box-shadow: -100vw 0 0 100vw #f89e37;
+  box-sizing: border-box;
+}
+
+.packageContent
+  .packContent
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input::-ms-fill-lower {
+  background: #f89e37;
+}
+
+.packageContent
+  .packContent
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input::-ms-thumb {
+  background: #fff;
+  border: 2px solid #999;
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+  border-radius: 50% !important;
+}
+
+.packageContent
+  .packContent
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input::-ms-ticks-after {
+  display: none;
+}
+
+.packageContent
+  .packContent
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input::-ms-ticks-before {
+  display: none;
+}
+
+.packageContent
+  .packContent
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input::-ms-track {
+  background: #ddd;
+  color: transparent;
+  height: 20px;
+  border: none;
+}
+
+.packageContent
+  .packContent
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input::-ms-tooltip {
+  display: none;
+}
+
+.packageContent .packContent .priceSlider .SavedPrice {
+  width: 100%;
+
+  max-width: 380px;
+
+  margin: 0 auto !important;
+
+  padding: 0 15px;
+
+  margin-top: 28px !important;
+
+  background: #fff;
+
+  border-radius: 5px;
+
+  box-shadow: 0px 0px 15px 0px #d5d5d578;
+
+  padding-right: 130px;
+
+  position: relative;
+
+  height: 60px;
+
+  line-height: 60px;
+
+  font-weight: 600;
+
+  font-size: 22px;
+
+  display: flex;
+  color: #f89e37;
+}
+.packageContent .packContent .priceSlider .SavedPrice .saveBtn {
+  background: #f89e37;
+  position: absolute;
+  right: 2px;
+  color: #fff;
+  height: 56px;
+  top: 2px;
+  line-height: 56px;
+  padding: 0 8px;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px #d5d5d578;
+  width: 136px;
+}
+.freeServices {
+  width: 100%;
+
+  float: left;
+
+  padding: 0 50px;
+
+  position: relative;
+}
+.freeServices .headindBox {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+.freeServices .headindBox .leftT {
+  font-size: 22px;
+
+  font-weight: 600;
+}
+.freeServices .headindBox .RightT {
+  font-size: 18px;
+
+  font-weight: 500;
+}
+.freeServices .headindBox .RightT span {
+  color: #f89e37;
+  font-weight: 600;
+  font-size: 28px;
+}
+.freeServices .freeContentBox {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-bottom: 50px;
+  line-height: 30px;
+  color: #363636;
+  font-weight: 300;
+}
+.freeServices .freeContentBox span {
+  width: 100%;
+  float: left;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+}
+.freeServices .freeContentBox a {
+  color: #f89e37;
+  padding-left: 16px;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.getServices {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 30px 0;
+}
+.getServices ul {
+  width: 100%;
+
+  display: inline-block;
+}
+.getServices ul li {
+  display: inline-block;
+
+  width: 33%;
+
+  padding: 3px;
+}
+.getServices ul li .serviceBx {
+  border: 2px solid #d5d5d5;
+
+  width: 100%;
+
+  float: left;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  color: #bfbfbf;
+
+  padding-left: 60px;
+
+  position: relative;
+
+  height: 80px;
+
+  text-align: center;
+
+  box-shadow: 0px 0px 15px 0px #27272712;
+  font-size: 13px;
+}
+.getServices ul li .serviceBx img {
+  position: absolute;
+
+  left: 15px;
+
+  width: 50px;
+
+  filter: opacity(0.3);
+}
+.getServices ul li .serviceBx span {
+  width: 100%;
+
+  float: left;
+
+  font-size: 22px;
+
+  font-weight: 600;
+}
+.getServices ul li .serviceBx.active {
+  border-color: #f89e37;
+}
+.getServices ul li .serviceBx.active img {
+  filter: opacity(1);
+}
+.getServices ul li .serviceBx.active span {
+  color: #f89e37;
+}
+
+.hotListingProject {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  background: #fbfbfb;
+
+  display: flex;
+}
+.hotListingProject .leftSection {
+  width: 30%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 50px;
+
+  background: #f89e37;
+
+  display: flex;
+
+  flex-direction: column;
+}
+.hotListingProject .leftSection .titleContent {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.hotListingProject .leftSection .titleContent .mainTitle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+  margin-bottom: 30px;
+
+  line-height: 46px;
+
+  color: #fff;
+}
+.hotListingProject .leftSection .titleContent .subTitle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  color: #fff;
+
+  margin-bottom: 18px;
+
+  font-weight: 300;
+
+  font-size: 18px;
+}
+.hotListingProject .rightSection {
+  width: 70%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 30px 50px;
+}
+.hotListingProject .rightSection ul {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-bottom: 20px;
+}
+
+.hotListingProject .rightSection ul .nav-item .nav-link {
+  background: transparent;
+
+  color: #9a9a9a;
+
+  font-size: 18px;
+
+  border-bottom: 5px solid transparent;
+
+  border-radius: 0px;
+
+  padding: 15px 47px;
+
+  font-weight: 500;
+}
+.hotListingProject .rightSection ul .nav-item .nav-link.active {
+  color: #f89e37;
+
+  border-color: #f89e37;
+}
+.hotListingProject .rightSection .tab-content {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 25px;
+
+  background: #fff;
+
+  box-shadow: 0px 0px 15px 0px #d5d5d552;
+}
+.hotListingProject .rightSection .tab-content .listingBox {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.hotListingProject .rightSection .tab-content .listingBox .titleBox {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.hotListingProject .rightSection .tab-content .listingBox .titleBox .title {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 22px;
+
+  font-weight: 600;
+
+  color: #5d5d5d;
+
+  margin-bottom: 10px;
+}
+.hotListingProject .rightSection .tab-content .listingBox .titleBox .subtitle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 15px;
+}
+
+.hotListBox {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin: 50px 0 0;
+}
+.hotListBox .hotProjectBox {
+  width: 100%;
+
+  float: left;
+
+  background: #fff;
+
+  box-shadow: 0px 0px 15px 0px #d5d5d5;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  margin-bottom: 15px;
+}
+.mobileview .hotProjectBox {
+  margin-bottom: 0 !important;
+}
+.hotListBox .hotProjectBox .projectPic {
+  width: 100%;
+
+  float: left;
+
+  height: 150px;
+
+  background-position: center;
+
+  background-size: cover;
+}
+.hotListBox .hotProjectBox .projectDetails {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 10px;
+}
+.hotListBox .hotProjectBox .projectDetails .title {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  color: #f89e37;
+}
+.hotListBox .hotProjectBox .projectDetails .location {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 13px;
+
+  margin-bottom: 10px;
+
+  color: #363636;
+}
+.hotListBox .hotProjectBox .projectDetails .homePro {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.hotListBox .hotProjectBox .projectDetails .homePro ul {
+  margin-bottom: 10px;
+}
+.hotListBox .hotProjectBox .projectDetails .homePro ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.hotListBox .hotProjectBox .projectDetails .homePro ul li .bedDetails {
+  font-size: 13px;
+}
+.hotListBox .hotProjectBox .projectDetails .homePro ul li .bedDetails img {
+  width: 20px;
+
+  margin-right: 10px;
+}
+.hotListBox .hotProjectBox .projectDetails .price {
+  width: 100%;
+
+  float: left;
+
+  text-align: center;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  color: #f89e37;
+}
+.hotListBox .hotProjectBox .projectDetails .squrFt {
+  width: 100%;
+
+  float: left;
+
+  text-align: center;
+
+  font-size: 13px;
+
+  font-style: italic;
+}
+
+.townHomesStat {
+  width: 100%;
+
+  float: left;
+
+  padding: 50px;
+}
+.townHomesStat .mainTitle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding-left: 25px;
+
+  margin-bottom: 30px;
+}
+.townHomesStat .mainTitle .HeadTitle {
+  font-size: 42px;
+
+  font-weight: 600;
+
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.townHomesStat .mainTitle:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 60px;
+  background: #f89e37;
+  left: 0;
+}
+.townHomesStat .mainTitle .subTitle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  max-width: 686px;
+}
+.townHomesStat .statsAverageBox {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 30px;
+
+  background: white;
+}
+.townHomesStat .statsAverageBox.bs {
+  box-shadow: 0px 0px 15px 0px #d5d5d552;
+}
+.townHomesStat .statsAverageBox .heading {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 24px;
+
+  font-weight: 600;
+
+  color: #363636;
+
+  margin-bottom: 20px;
+}
+
+.averageBox {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.averageBox .averageTitlebox {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding-right: 100px;
+
+  height: 76px;
+
+  line-height: 75px;
+
+  font-size: 18px;
+}
+.bb {
+  border-bottom: 1px solid #d5d5d561;
+}
+.br {
+  border-right: 1px solid #d5d5d561;
+}
+.averageBox .averageTitlebox span {
+  font-size: 21px;
+  position: absolute;
+  right: 0px;
+  font-weight: 600;
+}
+
+.timeHomeratio {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  vertical-align: middle;
+
+  flex-direction: column;
+
+  padding-top: 28px;
+
+  padding-bottom: 30px;
+}
+.timeHomeratio .boldText.orange {
+  width: 100%;
+
+  float: left;
+
+  text-align: center;
+
+  font-size: 64px;
+
+  font-weight: 600;
+
+  color: #f89e37;
+}
+.timeHomeratio .smallText {
+  font-size: 18px;
+}
+.timeHomeratio .mediumText {
+  font-size: 24px;
+
+  font-weight: 700;
+}
+.timeHomeratio .mediumText.green {
+  color: #06cc3a;
+}
+.timeHomeratio .mediumText.pink {
+  color: #ea0ee4;
+}
+
+.townHomesStat.bg {
+  background: #fbfbfb;
+}
+.blogPanel {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.blogPanel .blogContent {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  box-shadow: 0px 0px 15px 0px #d5d5d552;
+
+  background: #ffff;
+}
+.blogPanel .blogContent .blogPic {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  height: 300px;
+
+  background-position: center;
+
+  background-size: cover;
+}
+.blogPanel .blogContent .blogInnerContent {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 15px;
+}
+.blogPanel .blogContent .blogInnerContent .tagHomeTown {
+  border: 1px solid #f89e37;
+
+  display: inline-block;
+
+  padding: 5px 21px;
+
+  color: #f89e37;
+
+  margin-bottom: 12px;
+}
+.blogPanel .blogContent .blogInnerContent .title {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 24px;
+
+  font-weight: 600;
+}
+.blogPanel .blogContent .blogInnerContent .subtitle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 16px;
+
+  min-height: 80px;
+}
+.blogPanel .blogContent .blogInnerContent .btmAction {
+  width: 100%;
+
+  float: left;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 13px;
+}
+
+.blogPanel .blogContent .blogInnerContent .btmAction .readMore {
+  color: dimgrey;
+}
+.blogPanel .blogContent .blogInnerContent .btmAction .readMore a {
+  color: #363636;
+}
+
+.mortageTable {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.mortageTable .headingtitle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+  color: #fff;
+
+  margin-bottom: 20px;
+}
+.mortageTable .motaageTablePanel {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 10px;
+
+  background: #f89e37;
+
+  box-shadow: 0px 0px 37px 0px #d2700096;
+
+  border-radius: 7px;
+}
+.mortageTable .motaageTablePanel table {
+  color: #fff;
+
+  width: 100%;
+}
+
+.mortageTable .motaageTablePanel table thead tr th {
+  padding: 15px 20px;
+}
+
+.mortageTable .motaageTablePanel table tbody tr td {
+  padding: 16px 20px;
+
+  border-top: 1px solid #ffffff2e;
+
+  font-size: 13px;
+}
+.mortageTable .actionBtn {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  text-align: center;
+
+  margin: 20px 0;
+}
+.mortageTable .actionBtn .learnMore {
+  height: 50px;
+
+  line-height: 50px;
+
+  background: #fffefd;
+
+  display: inline-block;
+
+  padding: 0px 50px;
+
+  color: #f89e37;
+
+  box-shadow: 0px 0px 37px 0px #d2700096;
+}
+.timeHomeratio.br {
+  padding-top: 72px;
+}
+label.dv-star-rating-star {
+  margin-bottom: 0;
+}
+.dv-star-rating {
+  margin: 0px 10px;
+}
+.seller {
+  text-align: center;
+}
+
+.modalContent {
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+  background: #fff;
+  padding: 0 20px 20px;
+  /* margin-top: 40px; */
+}
+.modalContent .leftSectionKnow {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.homeworthMap {
+  margin-top: 10px;
+}
+.modalContent .rightSectionKnow {
+  width: 50%;
+  float: left;
+  position: relative;
+  background: #fff;
+}
+.rightSectionKnow .heading {
+  text-align: center;
+  width: 100%;
+}
+.modalContent .rightSectionKnow .propHeading {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+.modalContent .rightSectionKnow .field {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d5d5d5;
+  margin-bottom: 10px;
+}
+.stepper {
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #d5d5d5;
+  margin-bottom: 7px;
+}
+.stepper {
+  margin-bottom: 20px;
+}
+.propertyName {
+  text-align: center;
+  width: 100%;
+  float: left;
+  padding: 10px 0;
+  color: #f89e37;
+  font-weight: 700;
+}
+.stepper a {
+  font-weight: 700 !important;
+}
+.filterSecFirst {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  /* border-bottom: 1px solid #d5d5d587; */
+}
+.filterSecFirst.filterBox {
+  padding: 10px 0;
+}
+.d-f-space {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.FW-1 {
+  width: 100%;
+}
+.filterSecFirst .inputBox {
+  display: inline-flex;
+  padding-left: 15px;
+  position: relative;
+}
+
+.inputBox.serchBar {
+  width: 100%;
+  max-width: 300px;
+}
+.btn {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  border-radius: 5px;
+  border: 1px solid #06507b;
+}
+.btnAlert {
+  background: #fff !important;
+  border: 1px solid #06507b !important;
+  border-radius: 0 !important;
+  font-weight: 400 !important;
+  color: #06507b !important;
+}
+.pd-15 {
+  padding: 0 15px;
+}
+.btnSale {
+  background: #fff;
+  border: 1px solid #06507b1f !important;
+  border-radius: 0 !important;
+  font-weight: 400 !important;
+  color: #323232;
+}
+.btnSale.active {
+  background: #f89e37;
+  border: 1px solid #f89e37 !important;
+  border-radius: 0 !important;
+  color: #fff;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  box-shadow: 0px 0px 43px 0px #19191930 !important;
+}
+.btnSale.moreFilters.active:after {
+  background: #f89e37;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 42%;
+  transition: all 0.5s ease;
+}
+.filterBoxArea .inputBox {
+  width: 100%;
+}
+.filterBoxArea .inputBox .btnSale {
+  width: 100%;
+}
+.filterBoxArea .inputBox .formInput {
+  width: 100%;
+}
+
+.filterBoxArea .inputBox .formInput .price-filter {
+  width: 100%;
+}
+.filterBoxArea .inputBox .formInput .eJkAMg {
+  color: #323232;
+  font-weight: 300;
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px;
+  text-align: center;
+}
+.react-dropdown-select-item-selected {
+  background: #f89e37;
+}
+.serchListings {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-top: 30px;
+}
+.serchListings .topBar {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  display: inline-flex;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid #d5d5d56b;
+
+  padding: 10px 0;
+
+  margin-bottom: 15px;
+}
+.inputBox.propertyAll {
+  width: 100%;
+}
+.inputBox.propertyAll > div {
+  width: 100%;
+}
+.serchListings .topBar .leftSide {
+  font-size: 18px;
+}
+.serchListings .topBar .leftSide span {
+  font-weight: 700;
+
+  color: #f89e37;
+
+  padding-left: 25px;
+}
+.serchListings .topBar .rightSide {
+  font-weight: 400;
+
+  font-size: 14px;
+}
+.searchListingPanel {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+  padding: 15px;
+}
+.searchListingPanel .salesHouses {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  background: #fff;
+
+  box-shadow: 0px 0px 20px 0px #d5d5d5;
+
+  margin-bottom: 15px;
+}
+.searchListingPanel .salesHouses .housesPic {
+  width: 100%;
+
+  float: left;
+
+  height: 150px;
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+.searchListingPanel .salesHouses .housesDetails {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 10px;
+}
+.searchListingPanel .salesHouses .housesDetails .housePrice {
+  text-align: center;
+  display: inline-flex;
+  background: #fff;
+  top: -31px;
+  position: relative;
+  box-shadow: 0px 0px 15px 0px #d5d5d5ad;
+  padding: 8px 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 23px;
+  font-weight: 600;
+  color: #f89e37;
+  font-size: 17px;
+  float: unset;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.searchListingPanel .salesHouses .housesDetails .houseName {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-weight: 700;
+
+  font-size: 20px;
+
+  top: -20px;
+}
+.searchListingPanel .salesHouses .housesDetails .houseAddres {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 14px;
+
+  margin-bottom: 13px;
+
+  top: -15px;
+}
+.searchListingPanel .salesHouses .housesDetails .homePro {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+.searchListingPanel .salesHouses .housesDetails .homePro .sqFeet {
+  font-size: 13px;
+
+  font-style: italic;
+}
+.searchListingPanel .salesHouses .housesDetails .homePro ul {
+  display: flex;
+}
+.searchListingPanel .salesHouses .housesDetails .homePro ul li {
+  font-size: 13px;
+  margin-right: 5px;
+}
+.searchListingPanel .salesHouses .housesDetails .homePro ul li .bedDetails img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.formContent {
+  font-size: 13px;
+}
+.popactionBtn {
+  width: 100%;
+  float: left;
+  display: flex;
+  margin-top: 10px;
+}
+.ctaBoxform {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 0px 0px 0px 25px;
+}
+.ctaBoxform .scheduleProcess {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  background: #fff;
+
+  box-shadow: 0px 0px 15px 0px #d5d5d5;
+
+  padding: 25px;
+}
+.ctaBoxform .scheduleProcess .heading {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-weight: 600;
+
+  color: #f89e37;
+
+  font-size: 24px;
+}
+.ctaBoxform .FormBox {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-top: 20px;
+}
+
+.ctaBoxform .FormBox .inputForm {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-bottom: 15px;
+}
+.ctaBoxform .FormBox .inputForm .label {
+  width: 100%;
+  float: left;
+  position: relative;
+
+  font-size: 14px;
+}
+.ctaBoxform .FormBox .inputForm .formInput {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.ctaBoxform .FormBox .inputForm .formInput .form-control {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  border-radius: 0px;
+
+  margin-bottom: 0px;
+
+  font-size: 13px;
+
+  min-height: 40px;
+}
+
+.ctaBoxform .FormBox .inputForm .formInput .formsubmit {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  border: 0;
+  background: #f89e37;
+  color: #fff;
+}
+.scheduleProcess .options {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-top: 15px;
+}
+.scheduleProcess .options .lableHeading {
+  width: 100%;
+
+  float: left;
+
+  text-align: center;
+}
+.scheduleProcess .options .actionBox {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.scheduleProcess .options .actionBox ul {
+  display: inline-block;
+
+  text-align: center;
+
+  width: 100%;
+
+  margin-top: 23px;
+}
+.scheduleProcess .options .actionBox ul li {
+  display: inline-flex;
+}
+.scheduleProcess .options .actionBox ul li a {
+  padding: 10px;
+}
+.inforamtionDetail {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #d5d5d547;
+
+  margin-bottom: 15px;
+}
+.inforamtionDetail .informationPanle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.inforamtionDetail .informationPanle .title {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-weight: 600;
+
+  font-size: 30px;
+}
+.inforamtionDetail .informationPanle .address {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 14px;
+}
+.inforamtionDetail .informationPanle .condos {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-weight: 700;
+}
+.inforamtionDetail .informationPanle .cashback {
+  border: 1px solid #f89e37;
+  width: auto;
+  float: left;
+  padding: 7px;
+  margin-top: 10px;
+  color: #f89e37;
+  font-weight: 500;
+  background: #fff;
+  font-size: 22px;
+}
+.inforamtionDetail .informationPanle .homePro {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-top: 20px;
+}
+.inforamtionDetail .informationPanle .homePro ul {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.inforamtionDetail .informationPanle .homePro ul li {
+  display: inline-block;
+  min-width: 146px;
+}
+.inforamtionDetail .informationPanle .homePro ul li .bedDetails {
+  padding-right: 20px;
+
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  display: flex;
+}
+.inforamtionDetail .informationPanle .homePro ul li .bedDetails img {
+  width: 23px;
+  margin-right: 8px;
+}
+.inforamtionDetail .priceDetails {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  text-align: right;
+}
+.inforamtionDetail .priceDetails .price {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #5ac755;
+}
+.inforamtionDetail .priceDetails .price span {
+  font-size: 24px;
+}
+.inforamtionDetail .priceDetails .deposit {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 16px;
+}
+.inforamtionDetail .priceDetails .mortgage {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 16px;
+}
+.inforamtionDetail .priceDetails .listedDate {
+  margin-top: 21px;
+  width: 100%;
+  float: left;
+  font-style: italic;
+  font-size: 18px;
+  color: #adadad;
+}
+.detailBox {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+
+.detailBox .title {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 24px;
+
+  margin-bottom: 18px;
+}
+.detailBox .discriptions {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 16px;
+}
+.detailBox .discriptions.bs {
+  box-shadow: 0px 0px 15px 0px #d6d6d675;
+  padding: 24px;
+  border-radius: 10px;
+  line-height: 30px;
+}
+.detailBox .facts {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 30px 0;
+}
+.detailBox .facts .factList {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+
+.detailBox .facts .factList .lableTask {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  display: flex;
+
+  margin-bottom: 10px;
+}
+
+.detailBox .facts .factList .lableTask .leftLable {
+  min-width: 200px;
+
+  font-weight: 600;
+}
+
+.detailBox .facts .factList .lableTask .leftLableDetail {
+  min-width: 200px;
+  font-weight: 400;
+}
+
+.roomDimonsions {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.roomDimonsions .areaDimonsions {
+  background: #fff;
+
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  box-shadow: 0px 0px 15px 0px #d5d5d559;
+
+  padding: 11px 33px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-radius: 45px;
+
+  margin-bottom: 10px;
+}
+.roomDimonsions .areaDimonsions .leftSide {
+  display: flex;
+
+  align-items: center;
+}
+.roomDimonsions .areaDimonsions .leftSide .areaName {
+  font-size: 19px;
+
+  font-weight: 500;
+
+  width: 179px;
+
+  color: #888888;
+}
+.roomDimonsions .areaDimonsions .leftSide .madeComponent {
+  font-size: 15px;
+
+  color: #29a71a;
+}
+
+.roomDimonsions .areaDimonsions .rightSide .areaSqFt {
+  font-weight: 500;
+
+  color: #f89e37;
+}
+.applewoodProject .homePicBox .soldDate {
+  background: #f89e37;
+  display: inline-block;
+  padding: 5px 15px;
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  border-radius: 50px;
+}
+.pd-5 {
+  padding: 7px !important;
+}
+.applewoodProject {
+  background: #fff;
+
+  box-shadow: 0px 0px 15px 0px #d5d5d5;
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+.applewoodProject .homePicBox {
+  width: 100%;
+
+  float: left;
+
+  height: 140px;
+
+  background-position: center !important;
+
+  background-repeat: no-repeat !important;
+
+  background-size: cover !important;
+  position: relative;
+}
+.applewoodProject .homeDetails {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 10px;
+
+  text-align: LEFT;
+
+  margin-bottom: 10px;
+}
+.applewoodProject .homeDetails .projectName {
+  font-size: 14px;
+}
+.applewoodProject .homeDetails .projectNameRoad {
+  font-size: 12px;
+
+  width: 100%;
+
+  float: left;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+}
+.applewoodProject .homeDetails .homePro {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.applewoodProject .homeDetails .homePro ul {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.applewoodProject .homeDetails .homePro ul li {
+  display: inline-flex;
+
+  margin-right: 5px;
+
+  align-items: center;
+}
+.applewoodProject .homeDetails .homePro ul li .bedDetails {
+  position: relative;
+
+  font-size: 11px;
+
+  padding-left: 30px;
+}
+.applewoodProject .homeDetails .homePro ul li .bedDetails img {
+  position: absolute;
+
+  left: 0;
+
+  width: 20px;
+  height: auto !important;
+}
+.applewoodProject .homeDetails .sqFeet {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 10px 0;
+}
+.applewoodProject .homeDetails .sqFeet .sq {
+  font-size: 12px;
+
+  font-style: italic;
+}
+.applewoodProject .homeDetails .sqFeet .Price {
+  font-weight: 600;
+
+  color: #ff7100;
+}
+.actBtn {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-top: 20px;
+}
+.actBtn .addList {
+  width: 100%;
+
+  height: 44px;
+
+  line-height: 44px;
+
+  border: 0;
+
+  background: #19619a;
+
+  color: #fff;
+
+  box-shadow: 0px 0px 23px 0px #1b95f754;
+}
+.mortgageInfo {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-bottom: 20px;
+}
+.mortgageInfo .mortgageInputes {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 30px;
+
+  box-shadow: 0px 0px 15px 0px #d5d5d56e;
+}
+.mortgageInfo .mortgageInputes .inputForm {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-bottom: 20px;
+}
+.mortgageInfo .mortgageInputes .inputForm .label {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-weight: 500;
+
+  color: #8a8a8a;
+}
+.mortgageInfo .mortgageInputes .inputForm .formInput {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  border-bottom: 1px solid #d5d5d552;
+}
+.mortgageInfo .mortgageInputes .inputForm .formInput .form-control {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  border-radius: 0px;
+
+  min-height: 48px;
+
+  border: 0px;
+
+  padding: 0;
+
+  padding: 10px 0;
+
+  font-size: 24px;
+
+  font-weight: 600;
+}
+
+.mortgageInputes .topHeadings {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  display: flex;
+}
+.mortgageInputes .topHeadings .totalMortgage.blue {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  background: linear-gradient(0deg, #1a639c, #0e93f3);
+
+  padding: 10px;
+
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 15px 0px #0396ff4f;
+
+  text-align: center;
+
+  margin: 2px;
+}
+.mortgageInputes .topHeadings .totalMortgage.green {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  background: linear-gradient(0deg, #29a71a, #30d01d);
+
+  padding: 10px;
+
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 47px 0px #29aa1a45;
+
+  text-align: center;
+
+  margin: 2px;
+}
+.mortgageInputes .topHeadings .totalMortgage .totalMortgagetitle {
+  color: #fff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  min-height: 44px;
+}
+.mortgageInputes .topHeadings .totalMortgage .totalMortgageprice {
+  color: #fff;
+
+  font-size: 24px;
+
+  font-weight: 600;
+}
+.mortageDetails {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding-top: 30px;
+}
+.mortageDetails .title {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-weight: 700;
+}
+.mortageDetails .closingDetails {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 14px 0;
+
+  border-bottom: 1px dashed #f89e37;
+}
+.mortageDetails .closingDetails .name {
+  font-weight: 700;
+
+  color: #323232;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.react-datepicker-wrapper input[type="text"] {
+  width: 100%;
+  float: left;
+  position: relative;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  font-size: 13px;
+  min-height: 40px;
+}
+.mapShorting {
+  position: absolute;
+  left: 90px;
+  top: 140px;
+  z-index: 1;
+}
+.mapShorting .inputBox {
+  float: left;
+  display: flex;
+}
+.filterSecFirst.filterBox.moreFilterBox.d-f-space .inputBox {
+  width: 100%;
+}
+.filterSecFirst.filterBox.moreFilterBox.d-f-space .formInput {
+  width: 100%;
+}
+.pricePanel {
+  display: flex;
+  justify-content: space-between;
+}
+.pricePanel .sq {
+  font-size: 13px;
+  font-style: italic;
+}
+.react-dropdown-select-dropdown {
+  min-width: 140px !important;
+}
+.formInput.d-flex.i-d-n .css-8a84cx-InputComponent {
+  display: none;
+}
+.css-v1jrxw-ContentComponent span {
+  white-space: nowrap;
+}
+.multi-select {
+  --rmsc-main: #ef9835 !important ;
+  --rmsc-hover: #ef9835 !important;
+  --rmsc-selected: #ef9835 !important;
+  --rmsc-border: #e0e0e0 !important;
+  --rmsc-gray: #ef9835 !important;
+  --rmsc-bg: #fff !important;
+  --rmsc-p: 3px !important; /* Spacing */
+  --rmsc-radius: 0px !important; /* Radius */
+  --rmsc-h: 50px !important;
+}
+
+@media (min-width: 1200px) and (max-width: 1680px) {
+  .searchListingPanel .salesHouses .housesDetails .houseName {
+    font-size: 16px;
+    top: -20px;
+    min-height: 48px;
+  }
+  .searchListingPanel .salesHouses .housesDetails .houseAddres {
+    font-size: 14px;
+    margin-bottom: 13px;
+    top: -15px;
+    min-height: 42px;
+  }
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+  line-height: 0.9;
+  padding: 0 1px;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #ef9835 !important;
+}
+.tel {
+  background: #f89e37;
+  text-align: center;
+  padding: 0px 30px;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 23;
+  font-weight: 600;
+}
+
+/* .swal2-icon.swal2-success {
+  background-color: #ef9835 !important;
+} */
+
+/*---------------------------------------------
+buyerpagecss
+-----------------------------------------------*/
+
+/*buyerpagecss*/
+.topContent {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 70px 0 30px;
+}
+.topContent .headings {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  text-align: center;
+}
+.topContent .headings .smallContent {
+  margin-top: 50px;
+
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+.topContent .headings h1 {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-weight: 700;
+
+  margin: 5px 0px;
+
+  font-size: 22px;
+
+}
+.topContent .headings p {
+  width: 100%;
+
+  position: relative;
+
+  max-width: 800px;
+
+  margin: auto;
+
+  display: inline-block;
+}
+
+/*-------*/
+
+.stepsBoxPanel {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.stepsBoxPanel .stepsPanel {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.stepsBoxPanel .stepsPanel .card {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  border: 0;
+
+  background: transparent;
+
+  margin-bottom: 25px;
+}
+.stepsBoxPanel .stepsPanel .card .card-header {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  background: transparent;
+
+  padding-bottom: 0;
+
+  padding: 0;
+
+  border-bottom: 0px;
+}
+.stepsBoxPanel .stepsPanel .card .card-header .title {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 0px 20px;
+  /* background: #fff;
+
+  box-shadow: 0px 0px 15px 0px #d5d5dd80; */
+
+  border-radius: 5px;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 5px;
+}
+.stepsBoxPanel .stepsPanel .card .card-header .title span {
+  font-size: 42px;
+
+  font-weight: 700;
+
+  margin-right: 10px;
+
+  color: #f89e37;
+}
+.stepsBoxPanel .stepsPanel .card .card-header .stepsCheckListbtn {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 20px;
+
+  background: #fff;
+
+  box-shadow: 0px 0px 15px 0px #d5d5dd80;
+}
+.tabImag {
+  width: 100%;
+  float: left;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.stepsBoxPanel .stepsPanel .card .card-header .genericBox {
+  width: 100%;
+  float: left;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 15px 0px #d5d5d5;
+  border-radius: 15px;
+  transform: translate(-0%, -18%);
+}
+.stepsBoxPanel .stepsPanel .card .card-header .offerContent {
+  padding: 0 30px;
+
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  text-align: center;
+}
+.stepsBoxPanel .stepsPanel .card .card-header .offerContent h3 {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  text-align: center;
+
+  font-size: 24px;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+.stepsBoxPanel .stepsPanel .card .card-header .offerContent p {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+.stepsBoxPanel .stepsPanel .card .card-header .offerContent .bold-para {
+  font-size: 17px;
+}
+
+.stepsBoxPanel .stepsPanel .card .cardContent {
+  width: 100%;
+  float: left;
+  position: relative;
+  border-top: 0px;
+  padding: 0px;
+}
+.stepsBoxPanel .stepsPanel .card .cardContent .card-body {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 20px 20px;
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px #d5d5dd80;
+  border: 0px;
+  font-size: 14px;
+}
+.stepsBoxPanel .stepsPanel .card .cardContent .card-body.transparent {
+  background: transparent;
+  box-shadow: none;
+}
+
+.innerblock {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.why-choose-mytown {
+  padding: 10px 20px;
+  box-shadow: 0px 0px 15px 0px #d5d5d5;
+}
+.why-choose-mytown-link {
+  font-size: 17px !important;
+}
+.innerblock .knowladgePanel {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.innerblock .knowladgePanel .mainTitle {
+  width: 100%;
+  float: left;
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 0;
+  text-align: center;
+  color: #f89e37;
+}
+.innerblock .knowladgePanel p {
+  width: 100%;
+  float: left;
+  position: relative;
+  font-size: 14px;
+}
+.innerblock .knowladgePanel ul {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.innerblock .knowladgePanel ul li {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4A4A4A;
+}
+.innerblock .knowladgePanel ul li:before {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #16cc00;
+  content: "";
+  left: 0;
+  top: 8px;
+}
+
+.innerblock .priceSlider {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  text-align: center;
+
+  padding: 20px 20px 0;
+}
+.innerblock .priceSlider .SelectValue {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 22px;
+}
+.innerblock .priceSlider .SelectValue span {
+  width: 100%;
+
+  float: left;
+
+  font-size: 40px;
+
+  font-weight: 200;
+
+  margin-bottom: 25px;
+
+  color: #f89e37;
+}
+.innerblock .priceSlider .SlidePanle {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  margin-bottom: 20px;
+
+  margin-top: 0px;
+}
+.innerblock .priceSlider .SlidePanle .inputSlide {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  overflow: hidden;
+
+  height: 20px;
+}
+.innerblock .priceSlider .SlidePanle .inputSlide .form-slider[type="range"] {
+  margin: auto;
+
+  -webkit-appearance: none;
+
+  position: relative;
+
+  height: 20px;
+
+  width: 100%;
+
+  cursor: pointer;
+}
+.innerblock
+  .priceSlider
+  .SlidePanle
+  .inputSlide
+  input::-webkit-slider-runnable-track {
+  background: #ddd;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+.innerblock .priceSlider .SlidePanle .inputSlide input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; /* 1 */
+  height: 20px;
+  background: rgb(90, 89, 89);
+  box-shadow: -100vw 0 0 100vw #f89e37;
+  border: 2px solid #999; /* 1 */
+}
+
+.innerblock .priceSlider .SlidePanle .inputSlide input::-moz-range-track {
+  height: 20px;
+  background: #ddd;
+}
+
+.innerblock .priceSlider .SlidePanle .inputSlide input::-moz-range-thumb {
+  background: #f89e37;
+  height: 30px;
+  width: 30px;
+  border: 3px solid #fff;
+  border-radius: 50% !important;
+  box-shadow: -100vw 0 0 100vw #f89e37;
+  box-sizing: border-box;
+}
+
+.innerblock .priceSlider .SlidePanle .inputSlide input::-ms-fill-lower {
+  background: #f89e37;
+}
+
+.innerblock .priceSlider .SlidePanle .inputSlide input::-ms-thumb {
+  background: #fff;
+  border: 2px solid #999;
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+  border-radius: 50% !important;
+}
+
+.innerblock .priceSlider .SlidePanle .inputSlide input::-ms-ticks-after {
+  display: none;
+}
+
+.innerblock .priceSlider .SlidePanle .inputSlide input::-ms-ticks-before {
+  display: none;
+}
+
+.innerblock .priceSlider .SlidePanle .inputSlide input::-ms-track {
+  background: #ddd;
+  color: transparent;
+  height: 20px;
+  border: none;
+}
+
+.innerblock .priceSlider .SlidePanle .inputSlide input::-ms-tooltip {
+  display: none;
+}
+
+.packageSelect {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 10px 0 0;
+}
+.packageSelect .selectedPackInfo {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.packageType {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  text-align: center;
+
+  padding: 25px;
+
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 38px 0px #d5d5d5;
+
+  margin-bottom: 20px;
+
+  color: #fff;
+}
+.packageType.orange {
+  background: #f89e37;
+}
+
+.packageType .packTypeHead {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 30px;
+
+  font-weight: 200;
+}
+.packageType .packCommision {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 18px;
+}
+.packageSelect .selectedPackInfo .headingPanal {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.packageSelect .selectedPackInfo .headingPanal h3 {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 36px;
+
+  font-weight: 800;
+
+  margin-bottom: 16px;
+}
+.packageSelect .selectedPackInfo .headingPanal p {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 18px;
+}
+.packagesBenifits {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.packagesBenifits .packagesName {
+  width: 100%;
+  float: left;
+  position: relative;
+  line-height: 48px;
+  padding: 0 40px 0 15px;
+  background: #e2e2e2;
+  box-shadow: 0px 0px 15px 0px #d5d5dd80;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.packagesBenifits .packagesName img {
+  display: none;
+}
+.packagesBenifits .packagesName.active img {
+  display: block;
+}
+.packagesBenifits .packagesName.active {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  min-height: 48px !important;
+
+  line-height: 20px;
+
+  padding: 5px 40px 5px 15px;
+
+  background: #fff;
+
+  box-shadow: 0px 0px 15px 0px #d5d5dd80;
+
+  margin-bottom: 10px;
+
+  border-radius: 5px;
+
+  display: flex;
+
+  align-items: center;
+}
+.packagesBenifits .packagesName span {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.packagesBenifits .packagesName img {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+
+.p-l-r-50 {
+  padding: 0 50px;
+}
+
+.p-l-r-30 {
+  padding: 0 30px;
+}
+
+.btn-orange-outline {
+  background: #fff;
+  border-color: #f89e37 !important;
+  color: #f89e37;
+}
+
+.btn-green {
+  background: #28a745 !important;
+  color: #fff !important;
+  outline: none;
+  box-shadow: none;
+}
+.packfooter {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 0px 50px 0 30px;
+  border-top: 1px solid #56565608;
+}
+.faqPanel {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+}
+.faqPanel h3 {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  text-align: center;
+
+  padding: 50px 0;
+
+  font-size: 48px;
+
+  font-weight: 700;
+}
+.faqPanel .faqQues {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  padding: 20px;
+
+  box-shadow: 0px 0px 36px 0px #d5d5d561;
+
+  border-radius: 8px;
+
+  margin-bottom: 15px;
+
+  min-height: 200px;
+}
+.faqPanel .faqQues .title {
+  width: 100%;
+
+  float: left;
+
+  position: relative;
+
+  font-size: 18px;
+
+  margin-bottom: 10px;
+
+  font-weight: 700;
+}
+
+.comparePackages {
+  width: 100%;
+  float: left;
+  padding: 0px 0 50px;
+}
+
+.buyer-package-modal .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+.comparePackages .packagesBoxs {
+  width: 100%;
+
+  float: left;
+
+  padding: 30px;
+
+  background: #fff;
+
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 15px 0px #d5d5d557;
+}
+.packageType.green {
+  background: #28a745;
+}
+.packageType.blue {
+  background: #377ddb;
+}
+.book-package {
+  z-index: 9999;
+}
+.book-package .modal-body .headerContent .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #464646;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.book-package .modal-body .close {
+  position: absolute;
+  right: 16px;
+  top: 15px;
+  font-weight: 300;
+  font-size: 30px;
+  color: #ea7e00;
+  opacity: 1;
+}
+
+.book-package .modal-body {
+  border-radius: 0px !important;
+  padding: 80px 70px;
+} 
+
+.book-package .modal-body .headerContent {
+  width: 100%;
+  float: left;
+  position: relative;
+  /* margin-bottom: 15px; */
+}
+
+.book-package .modal-body .headerContent .subtitleContent {
+  width: 100%;
+  float: left;
+  position: relative;
+  font-size: 16px;  
+  text-align: center;
+}
+
+.book-package .modal-body .form {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.book-package .modal-body .form .input-form {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.book-package .modal-body .form .input-form .label {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.book-package .modal-body .form .input-form .input-field {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.book-package .modal-body .form .input-form .input-field .form-control {
+  width: 100%;
+  float: left;
+  position: relative;
+  border-radius: 0;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #d5d5d5ad;
+}
+
+.book-package .modal-body .form .input-form .orageBtn {
+  width: 100%;
+  text-align: center;
+  float: left;
+  position: relative;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  background: #f89e37;
+  border: 0px;
+  color: #fff;
+  box-shadow: 0px 10px 10px 0px #f89e371c;
+}
+
+.book-package .modal-content {
+  border-radius: 7px;
+} 
+
+.stepsPopups {
+  max-width: 1214px;
+
+  margin-top: 0px;
+}
+.stepsPopups .modal-content {
+  width: 100%;
+
+  float: left;
+  position: relative;
+  border-radius: 0;
+  border: 0;
+}
+.stepsPopups .modal-content .modal-body {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.stepsPopups .modal-content .modal-body .close {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 100;
+  font-size: 52px;
+  color: #ff8d00;
+  opacity: 1;
+  top: -50px;
+  background: #fff;
+  right: 0px;
+}
+.stepsPopups .modal-content .modal-body .headerContent {
+  width: 100%;
+  float: left;
+  position: relative;
+  background: #e59233;
+  color: #fff;
+  padding: 30px;
+}
+.stepsPopups .modal-content .modal-body .headerContent .headContent {
+  min-height: 345px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stepsPopups .modal-content .modal-body .headerContent .headContent p {
+  color: WHITE;
+}
+.stepsPopups .modal-content .modal-body .headerContent.green {
+  background: #008a00;
+}
+.stepsPopups .modal-content .modal-body .headerContent.darkpink {
+  background: #a400c1;
+}
+.stepsPopups .modal-content .modal-body .headerContent.blue {
+  background: #004896;
+}
+.stepsPopups .modal-content .modal-body .headerContent .title {
+  width: 100%;
+  float: left;
+  position: relative;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.stepsPopups .modal-content .modal-body .headerContent .subtitleContent {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.stepsPopups .modal-content .modal-body .piggyBox {
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
+.stepsPopups .modal-content .modal-body .stepsPanels {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 50px 0;
+}
+.stepsPopups .modal-content .modal-body .stepsPanels .contentWithSteps {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 0px 30px;
+}
+.stepsPopups .modal-content .modal-body .stepsPanels .contentWithSteps p {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 15px 0;
+  font-size: 14px;
+}
+.stepsPopups
+  .modal-content
+  .modal-body
+  .stepsPanels
+  .contentWithSteps
+  .stepsCounetr {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.stepsPopups
+  .modal-content
+  .modal-body
+  .stepsPanels
+  .contentWithSteps
+  .stepsCounetr
+  .small {
+  width: 100%;
+  float: left;
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e59233;
+}
+.stepsPopups
+  .modal-content
+  .modal-body
+  .stepsPanels
+  .contentWithSteps
+  .stepsCounetr
+  .heading {
+  width: 100%;
+  float: left;
+  position: relative;
+  font-size: 36px;
+  color: #e59233;
+}
+.stepsPopups
+  .modal-content
+  .modal-body
+  .stepsPanels
+  .contentWithSteps
+  .stepsCounetr
+  ul {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.stepsPopups
+  .modal-content
+  .modal-body
+  .stepsPanels
+  .contentWithSteps
+  .stepsCounetr
+  ul
+  li {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.stepsPopups
+  .modal-content
+  .modal-body
+  .stepsPanels
+  .contentWithSteps
+  .stepsCounetr
+  p {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.stepsPanels .form {
+  width: 100%;
+  float: left;
+  position: sticky;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 44px 0px #d5d5d58c;
+  top: 50px;
+}
+.stepsPanels .form .input-form {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.stepsPanels .form .input-form .label {
+  width: 100%;
+  float: left;
+  position: relative;
+  font-size: 13px;
+  color: #e59233;
+}
+.stepsPanels .form .input-form .input-field {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-bottom: 15px;
+}
+.stepsPanels .form .input-form .input-field .form-control {
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 40px;
+  border-radius: 0;
+}
+
+.stepsPanels .form .topHead {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-bottom: 25px;
+}
+.stepsPanels .form .topHead .title {
+  width: 100%;
+  float: left;
+  position: relative;
+  font-size: 30px;
+}
+.stepsPanels .form .topHead .subTitle {
+  width: 100%;
+  float: left;
+  position: relative;
+  font-size: 16px;
+  color: #828282;
+}
+.stepsPanels .form .input-form .btn.orageBtn {
+  width: 100%;
+  float: left;
+  position: relative;
+  background: #e59233;
+  border-radius: 0;
+  color: #fff;
+}
+.stepsPanels .contentWithSteps .nav-tabs {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.stepsPanels .contentWithSteps .nav-tabs .nav-item .nav-link {
+  border-radius: 0;
+  border: 1px solid whitesmoke;
+  font-size: 16px;
+  color: #353535 !important;
+  padding: 20px 30px;
+}
+.stepsPanels .contentWithSteps .nav-tabs .nav-item .nav-link.active {
+  background: #e59233;
+  color: #fff !important;
+}
+
+.popUpsLinks.mt-5 {
+  width: 100%;
+  float: left;
+}
+
+.packagesBenifits .tooltip {
+  position: absolute;
+  display: inline-block;
+  border-bottom: 1px dotted white;
+  opacity: 1;
+  right: 43px;
+  top: 3px;
+  font-size: 24px;
+  color: #f89e37;
+  z-index: 1;
+}
+
+.packagesBenifits .tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: small;
+  background-color: #f89e37;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 14px;
+  position: absolute;
+  z-index: 1;
+  bottom: 114%;
+  margin-left: -60px;
+  right: -11px;
+  max-width: 318px;
+  width: 300px;
+}
+
+.packagesBenifits .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 93%;
+  margin-left: -10px;
+  border-width: 9px;
+  border-style: solid;
+  border-color: #f89e37 transparent transparent transparent;
+}
+
+.packagesBenifits .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.packagesBenifits .packagesName span .yellowText {
+  color: #00d400;
+  font-weight: 600;
+  width: 100%;
+  float: left;
+  position: relative;
+  font-size: 13px;
+}
+.popUpsLinks .btn-orange {
+  width: 32%;
+  height: 50px;
+  font-size: smaller;
+  font-weight: 600;
+  padding: 0px 20px;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  border-radius: 10px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50px!important;
+}
+.modal-dialog {
+  margin: 3.75rem auto!important;
+}
+.buyer-card-first{
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.normalLink {
+  background: transparent;
+  border: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: #f89e37;
+  font-weight: 600;
+  cursor: pointer;
+}
