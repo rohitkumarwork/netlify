@@ -1,13 +1,11 @@
-
-
 // Core stuff
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Projectpic1 from "./precon-assets/projectPic1.jpg";
 // functional pieces
-import StaticMap, {Popup} from "react-map-gl";
+import StaticMap, { Popup } from "react-map-gl";
 import DeckGL from "deck.gl";
-import { PolygonLayer ,ScatterplotLayer } from "@deck.gl/layers";
+import { PolygonLayer, ScatterplotLayer } from "@deck.gl/layers";
 
 const MAPBOX_TOKEN =
   "pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA";
@@ -90,9 +88,24 @@ const polygonData4 = [
   },
 ];
 
-const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
-  eastRegion, westRegion, centralRegion, northRegion, setOpenProjectsModal,
-  setWestRegion, setEastRegion, setNorthRegion, setCentralRegion, setSelectedCityData }) => {
+const PreconMap = ({
+  viewState,
+  setViewState,
+  setonClick,
+  setSelectedRegion,
+  eastRegion,
+  westRegion,
+  centralRegion,
+  northRegion,
+  setOpenProjectsModal,
+  setWestRegion,
+  setEastRegion,
+  setNorthRegion,
+  setCentralRegion,
+  setSelectedCity,
+  selectedScatterplot,
+  selectedHome,
+}) => {
   const [layers, setLayers] = useState([]);
   const [popup, setPopup] = useState(false);
   const [totalProjectsPopup, setTotalProjectsPopup] = useState(false);
@@ -106,6 +119,8 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
   const [yAxis, setYAxis] = useState();
   const [selectedLayerData, setSelectedLayerData] = useState();
   const [isSelected, setIsSelected] = useState(false);
+
+  console.log("northRegion", northRegion);
 
   const LAYER_POLY1 = new PolygonLayer({
     id: "poly-layers",
@@ -121,25 +136,25 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
     getLineWidth: 1000,
     pickable: true,
     onClick: (info, event) => {
-      setLayers([LAYER_POLY1, centralRegionScatterplot])
-      setTotalProjectsPopup(false)
-      setSelectedRegion('Central')
+      setLayers([LAYER_POLY1, centralRegionScatterplot]);
+      setTotalProjectsPopup(false);
+      setSelectedRegion("Central");
       setonClick(true);
       setIsSelected(true);
       setViewState({
         ...viewState,
-        zoom: (viewState.zoom + 1),
-        transitionDuration: 5000
-      })
+        zoom: viewState.zoom + 1,
+        transitionDuration: 5000,
+      });
     },
     onHover: (info) => {
-      console.log("info",info);
-      setHoveredRegion('Central')
+      console.log("info", info);
+      setHoveredRegion("Central");
       setTotalProjectsPopup(true);
       setXAxis(info.x);
       setYAxis(info.y);
       setSelectedLayerData(centralRegion);
-    }
+    },
   });
 
   //map polygon layer
@@ -157,27 +172,27 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
     getLineWidth: 800,
     pickable: true,
     onClick: (info, event) => {
-      setSelectedRegion("East")
-      setTotalProjectsPopup(false)
-      setLayers([LAYER_POLY2, eastRegionScatterplot])
-      setonClick(true)
+      setSelectedRegion("East");
+      setTotalProjectsPopup(false);
+      setLayers([LAYER_POLY2, eastRegionScatterplot]);
+      setonClick(true);
       setIsSelected(true);
       setViewState({
         ...viewState,
-        zoom: (viewState.zoom + 1),
-        transitionDuration: 5000
-      }) 
+        zoom: viewState.zoom + 1,
+        transitionDuration: 5000,
+      });
     },
     onHover: (info) => {
-      console.log("info",info)
-      setHoveredRegion("East")
+      console.log("info", info);
+      setHoveredRegion("East");
       setTotalProjectsPopup(true);
       setXAxis(info.x);
       setYAxis(info.y);
       setSelectedLayerData(eastRegion);
-    }
+    },
   });
-  
+
   //map polygon layer
   const LAYER_POLY3 = new PolygonLayer({
     id: "poly-layers3",
@@ -193,25 +208,25 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
     getLineWidth: 800,
     pickable: true,
     onClick: (info, event) => {
-      setSelectedRegion("North")
-      setTotalProjectsPopup(false)
-      setLayers([LAYER_POLY3, northRegionScatterplot])
+      setSelectedRegion("North");
+      setTotalProjectsPopup(false);
+      setLayers([LAYER_POLY3, northRegionScatterplot]);
       setonClick(true);
       setIsSelected(true);
       setViewState({
         ...viewState,
-        zoom: (viewState.zoom + 1),
-        transitionDuration: 5000
-      }) 
+        zoom: viewState.zoom + 1,
+        transitionDuration: 5000,
+      });
     },
     onHover: (info) => {
-      console.log("info",info)
-      setHoveredRegion("North")
+      console.log("info", info);
+      setHoveredRegion("North");
       setTotalProjectsPopup(true);
       setXAxis(info.x);
       setYAxis(info.y);
       setSelectedLayerData(northRegion);
-    }
+    },
   });
 
   // map polygon layer
@@ -219,7 +234,7 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
     id: "poly-layers4",
     data: polygonData4,
     stroked: true,
-    filled: true,  
+    filled: true,
     extruded: false,
     wireframe: true,
     lineWidthMinPixels: 1,
@@ -229,32 +244,32 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
     getLineWidth: 800,
     pickable: true,
     onClick: (info, event) => {
-      setSelectedRegion("West")
-      setTotalProjectsPopup(false)
-      setLayers([LAYER_POLY4, westRegionScatterplot])
-      setonClick(true)
+      setSelectedRegion("West");
+      setTotalProjectsPopup(false);
+      setLayers([LAYER_POLY4, westRegionScatterplot]);
+      setonClick(true);
       setIsSelected(true);
       setViewState({
         ...viewState,
-        zoom: (viewState.zoom + 1),
-        transitionDuration: 5000
-      }) 
+        zoom: viewState.zoom + 1,
+        transitionDuration: 5000,
+      });
     },
     onHover: (info) => {
-      console.log("info",info)
-      setHoveredRegion("West")
+      console.log("info", info);
+      setHoveredRegion("West");
       setTotalProjectsPopup(true);
       setXAxis(info.x);
       setYAxis(info.y);
-      setSelectedLayerData(westRegion)
-    }
+      setSelectedLayerData(westRegion);
+    },
   });
-  
+
   const westRegionScatterplot = new ScatterplotLayer({
-    id: 'scatterplot-layer1',
+    id: "scatterplot-layer1",
     data: westRegion,
     pickable: true,
-    getPosition: d => [d.coordinates[0], d.coordinates[1]],
+    getPosition: (d) => [d.coordinates[0], d.coordinates[1]],
     pickable: true,
     opacity: 1,
     stroked: true,
@@ -263,17 +278,32 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
     radiusMinPixels: 8,
     radiusMaxPixels: 100,
     lineWidthMinPixels: 2,
-    getPosition: d => d.coordinates,
+    getPosition: (d) => d.coordinates,
     getRadius: 10,
-    getFillColor: d => [248, 158, 55],
-    getLineColor: d => [248, 158, 55],
+    getFillColor: (d) => [248, 158, 55],
+    getLineColor: (d) => [248, 158, 55],
     onClick: (info, event) => {
       setWestRegion([info.object]);
+
+      let obj = {
+        name: info.object.city,
+        region: "west",
+      };
+      console.log("infoooooooo", info);
+      setSelectedCity(obj);
+      setLayers([LAYER_POLY4, selectedCityScatterplot]);
+      setViewState({
+        longitude: info.object.coordinates[0],
+        latitude: info.object.coordinates[1],
+        zoom: 11,
+        transitionDuration: 3000,
+      });
       // setSelectedCityData([info.object]);
       // setOpenProjectsModal(true);
     },
+
     onHover: (info) => {
-      if(info.object) {
+      if (info.object) {
         setPopup(true);
         setLatitude(info.coordinate[1]);
         setLongitude(info.coordinate[0]);
@@ -281,14 +311,14 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
         setX(info.x);
         setY(info.y);
       }
-    }
-  })
+    },
+  });
 
   const northRegionScatterplot = new ScatterplotLayer({
-    id: 'scatterplot-layer2',
+    id: "scatterplot-layer2",
     data: northRegion,
     pickable: true,
-    getPosition: d => [d.coordinates[0], d.coordinates[1]],
+    getPosition: (d) => [d.coordinates[0], d.coordinates[1]],
     pickable: true,
     opacity: 1,
     stroked: true,
@@ -297,33 +327,44 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
     radiusMinPixels: 8,
     radiusMaxPixels: 100,
     lineWidthMinPixels: 2,
-    getPosition: d => d.coordinates,
+    getPosition: (d) => d.coordinates,
     getRadius: 10,
-    getFillColor: d => [248, 158, 55],
-    getLineColor: d => [248, 158, 55],
+    getFillColor: (d) => [248, 158, 55],
+    getLineColor: (d) => [248, 158, 55],
     onClick: (info, event) => {
-      setNorthRegion([info.object]);
-      // setSelectedCityData([info.object]);
-      // setOpenProjectsModal(true)
+      // setNorthRegion([info.object]);
+      let obj = {
+        name: info.object.city,
+        region: "north",
+      };
+      console.log("infoooooooo", info);
+      setSelectedCity(obj);
+      setLayers([LAYER_POLY3, selectedCityScatterplot]);
+      setViewState({
+        longitude: info.object.coordinates[0],
+        latitude: info.object.coordinates[1],
+        zoom: 11,
+        transitionDuration: 3000,
+      });
     },
     onHover: (info) => {
-      if(info.object) {
-        console.log("info.object:::>>>",info.object)
-        setPopup(true)
+      if (info.object) {
+        console.log("info.object:::>>>", info.object);
+        setPopup(true);
         setLatitude(info.coordinate[1]);
         setLongitude(info.coordinate[0]);
         setProjects(info.object);
         setX(info.x);
         setY(info.y);
       }
-    }
-  })
-  
+    },
+  });
+
   const centralRegionScatterplot = new ScatterplotLayer({
-    id: 'scatterplot-layer3',
+    id: "scatterplot-layer3",
     data: centralRegion,
     pickable: true,
-    getPosition: d => [d.coordinates[0], d.coordinates[1]],
+    getPosition: (d) => [d.coordinates[0], d.coordinates[1]],
     pickable: true,
     opacity: 1,
     stroked: true,
@@ -332,32 +373,47 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
     radiusMinPixels: 8,
     radiusMaxPixels: 100,
     lineWidthMinPixels: 2,
-    getPosition: d => d.coordinates,
+    getPosition: (d) => d.coordinates,
     getRadius: 10,
-    getFillColor: d => [248, 158, 55],
-    getLineColor: d => [248, 158, 55],
+    getFillColor: (d) => [248, 158, 55],
+    getLineColor: (d) => [248, 158, 55],
     onClick: (info, event) => {
-      setCentralRegion([info.object])
+      setCentralRegion([info.object]);
+
+      let obj = {
+        name: info.object.city,
+        region: "central",
+      };
+      console.log("infoooooooo", info);
+      setSelectedCity(obj);
+      setLayers([LAYER_POLY1, selectedCityScatterplot]);
+      setViewState({
+        longitude: info.object.coordinates[0],
+        latitude: info.object.coordinates[1],
+        zoom: 11,
+        transitionDuration: 3000,
+      });
+
       // setSelectedCityData([info.object]);
       // setOpenProjectsModal(true)
     },
     onHover: (info) => {
-      if(info.object) {
-        setPopup(true)
+      if (info.object) {
+        setPopup(true);
         setLatitude(info.coordinate[1]);
         setLongitude(info.coordinate[0]);
         setProjects(info.object);
         setX(info.x);
         setY(info.y);
       }
-    }
-  })
+    },
+  });
 
   const eastRegionScatterplot = new ScatterplotLayer({
-    id: 'scatterplot-layer4',
+    id: "scatterplot-layer4",
     data: eastRegion,
     pickable: true,
-    getPosition: d => [d.coordinates[0], d.coordinates[1]],
+    getPosition: (d) => [d.coordinates[0], d.coordinates[1]],
     pickable: true,
     opacity: 1,
     stroked: true,
@@ -366,40 +422,96 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
     radiusMinPixels: 8,
     radiusMaxPixels: 100,
     lineWidthMinPixels: 2,
-    getPosition: d => d.coordinates,
+    getPosition: (d) => d.coordinates,
     getRadius: 10,
-    getFillColor: d => [248, 158, 55],
-    getLineColor: d => [248, 158, 55],
+    getFillColor: (d) => [248, 158, 55],
+    getLineColor: (d) => [248, 158, 55],
     onClick: (info, event) => {
-      setEastRegion([info.object])
+      setEastRegion([info.object]);
+
+      let obj = {
+        name: info.object.city,
+        region: "east",
+      };
+      console.log("infoooooooo", info);
+      setSelectedCity(obj);
+      setLayers([LAYER_POLY2, selectedCityScatterplot]);
+      setViewState({
+        longitude: info.object.coordinates[0],
+        latitude: info.object.coordinates[1],
+        zoom: 11,
+        transitionDuration: 3000,
+      });
+
       // setSelectedCityData([info.object]);
       // setOpenProjectsModal(true)
     },
     onHover: (info) => {
-      if(info.object) {
-        setPopup(true)
+      if (info.object) {
+        setPopup(true);
         setLatitude(info.coordinate[1]);
         setLongitude(info.coordinate[0]);
         setProjects(info.object);
         setX(info.x);
         setY(info.y);
       }
-    }
+    },
+  });
+  // debugger;
+  console.log("---------selectedHome-------", selectedHome);
+
+  const selectedCityScatterplot = new ScatterplotLayer({
+    id: "scatterplot-layer4",
+    data: selectedHome,
+    pickable: true,
+    getPosition: (d) => [d.coordinates[0], d.coordinates[1]],
+    pickable: true,
+    opacity: 1,
+    stroked: true,
+    filled: true,
+    radiusScale: 7,
+    radiusMinPixels: 8,
+    radiusMaxPixels: 100,
+    lineWidthMinPixels: 2,
+    getPosition: (d) => d.coordinates,
+    getRadius: 10,
+    getFillColor: (d) => [248, 158, 55],
+    getLineColor: (d) => [248, 158, 55],
+    // onClick: (info, event) => {
+    //   setEastRegion([info.object]);
+    //   // setSelectedCityData([info.object]);
+    //   // setOpenProjectsModal(true)
+    // },
+    onHover: (info) => {
+      if (info.object) {
+        setPopup(true);
+        setLatitude(info.coordinate[1]);
+        setLongitude(info.coordinate[0]);
+        setProjects(info.object);
+        setX(info.x);
+        setY(info.y);
+      }
+    },
   });
 
   useEffect(() => {
     setLayers([LAYER_POLY4, LAYER_POLY3, LAYER_POLY2, LAYER_POLY1]);
-    setTimeout(() => setViewState({
-      ...viewState,
-      zoom: (viewState.zoom + 0.3),
-      transitionDuration: 500
-    }), 2000)
+    setTimeout(
+      () =>
+        setViewState({
+          ...viewState,
+          zoom: viewState.zoom + 0.3,
+          transitionDuration: 500,
+        }),
+      2000
+    );
   }, []);
-  
+  console.log("selectedScatterplot", selectedScatterplot);
+
   const handleProjectModal = (selectedData) => {
     setOpenProjectsModal(true);
-    setSelectedCityData(selectedData);
-  }
+    // setSelectedCityData(selectedData);
+  };
 
   return (
     <div>
@@ -419,33 +531,50 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
           mapboxApiAccessToken={MAPBOX_TOKEN}
         />
       </DeckGL>
-      {popup === true ? <div className="tooltip1"><div className="tooltipContent" style={{
-          top: y, left: x }}>
-          {projects && projects.cityData.length === 0 && <div>
-            No projects
-          </div> }
-            {projects && projects.cityData && projects.cityData.map((value) => {
-              return <div className="projectCard" onClick={() => handleProjectModal(value)}>
-              <div className="projectImg" style={{background:`url(${Projectpic1})`}}></div>
-                <div class="headTitle">
-                  <div class="projectName">
-                    {value.Community}
+      {popup === true ? (
+        <div className="tooltip1">
+          <div
+            className="tooltipContent"
+            style={{
+              top: y,
+              left: x,
+            }}
+          >
+            {projects && projects.cityData.length === 0 && (
+              <div>No projects</div>
+            )}
+            {projects &&
+              projects.cityData &&
+              projects.cityData.map((value) => {
+                return (
+                  <div
+                    className="projectCard"
+                    onClick={() => handleProjectModal(value)}
+                  >
+                    <div
+                      className="projectImg"
+                      style={{ background: `url(${Projectpic1})` }}
+                    ></div>
+                    <div class="headTitle">
+                      <div class="projectName">{value.Community}</div>
+                      <div class="stage">VIP Launch</div>
+                    </div>
+                    <div className="price">$ {value.Starting_From_Price}</div>
+                    <div class="area">{value.Address}</div>
                   </div>
-                  <div class="stage">
-                    VIP Launch
-                  </div>
-                </div>
-                <div className="price">
-                  $ {value.Starting_From_Price}
-                </div>
-                <div class="area">
-                  {value.Address}
-                </div>
-              </div>  
-            })}
-        </div></div> : null}
-        {totalProjectsPopup === true && isSelected !== true && <div className="total-projects-tooltip" style={{
-          top: yAxis, left: xAxis }}>
+                );
+              })}
+          </div>
+        </div>
+      ) : null}
+      {totalProjectsPopup === true && isSelected !== true && (
+        <div
+          className="total-projects-tooltip"
+          style={{
+            top: yAxis,
+            left: xAxis,
+          }}
+        >
           <div className="region-text">{hoveredRegion}</div>
           <div className="flex-space-between border-bottom">
             <div>Comming Soon</div>
@@ -459,7 +588,8 @@ const PreconMap = ({ viewState, setViewState,setonClick , setSelectedRegion,
             <div>VIP Launch</div>
             <div>3</div>
           </div>
-        </div> }
+        </div>
+      )}
     </div>
   );
 };

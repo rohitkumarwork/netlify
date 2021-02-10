@@ -42,12 +42,11 @@ export default () => {
   const [eastRegion, setEastRegion] = useState();
   const [northRegion, setNorthRegion] = useState();
   const [centralRegion, setCentralRegion] = useState();
-  const [selectedCityData, setSelectedCityData] = useState();
   const [preconCities, setPreconCities] = useState([]);
   const [allPreconProjects, setAllProjects] = useState();
   const [selectedRegion, setSelectedRegion] = useState();
   const [filteredProjects, setFilteredProjects] = useState([]);
-  const[onclick ,setonClick ] = useState(false);
+  const [onclick, setonClick] = useState(false);
   const [viewState, setViewState] = useState({
     longitude: geoData ? geoData.location.lng : -79.5681310928495,
     latitude: geoData ? geoData.location.lat : 44.083363238877766,
@@ -62,6 +61,10 @@ export default () => {
     bearing: 0,
     name: "Toronto, Ontario",
   });
+  const [selectedCity, setSelectedCity] = useState(null);
+  const [selectedScatterplot, setSelectedScatterplot] = useState();
+  const [selectedHome, setSelectedHome] = useState();
+  // const [selectedRegion, setSelectedRegion] = useState(false)
 
   async function fetchCityDetails() {
     ContentfulClient.getEntries({ content_type: "preConCity" })
@@ -72,90 +75,177 @@ export default () => {
   }
 
   async function fetchProjects() {
-        try {
-          const getProjects = await axios.post("https://precon-projects.herokuapp.com/getProject", {
-            "refresh_token": "1000.1c55269651ab9f58c7ece46d5533f13e.6f39d82ad9283883d9e21ac66d4b4f14"
-          })
-        let precon_projects = getProjects.data.data.data;
-        setAllProjects(precon_projects);
-        westLatLng(precon_projects);
-        northLatLng(precon_projects);
-        eastLatLng(precon_projects);
-        centralLatLng(precon_projects);
-    }
-    catch(err) {
-      console.log("error",err)
-    }
-  } 
-
-  async function westLatLng(precon_projects) {
-    const West = ["Burlington","Milton","Halton Hills","Oakville","Mississauga","Brampton","Caledon"];
-    let prCities = West.map((value) => {
-      return fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${value}.json?access_token=pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA`)
-        .then(response => response.json())
-        .then(data => {
-          let filteredList = precon_projects.filter((projects) => projects.City === value);
-          return {city: value,coordinates: [data.features[0].center[0], data.features[0].center[1]], 
-            cityData: filteredList };
-        }) 
-    })
-
-    const filteredData = await Promise.all(prCities);
-      if(filteredData){
-        setWestRegion(filteredData)
-      }
-    }
-
-  async function northLatLng (precon_projects) {
-    const North = ["King","Vaughan","Richmond Hill","Markham","Aurora","New Market","Stouffville","East Gwillimbury"]
-    let prCities = North.map((value) => {
-      return fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${value}.json?access_token=pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA`)
-        .then(response => response.json())
-        .then(data => {
-          let filteredList = precon_projects.filter((projects) => projects.City === value);
-          return {city: value,coordinates: [data.features[0].center[0], data.features[0].center[1]], 
-            cityData: filteredList};
-        }) 
-    })
-
-    const filteredData = await Promise.all(prCities);
-    if(filteredData){
-      setNorthRegion(filteredData)
+    try {
+      const getProjects = await axios.post(
+        "https://precon-projects.herokuapp.com/getProject",
+        {
+          refresh_token:
+            "1000.1c55269651ab9f58c7ece46d5533f13e.6f39d82ad9283883d9e21ac66d4b4f14",
+        }
+      );
+      let precon_projects = getProjects.data.data.data;
+      setAllProjects(precon_projects);
+      westLatLng(precon_projects);
+      northLatLng(precon_projects);
+      eastLatLng(precon_projects);
+      centralLatLng(precon_projects);
+    } catch (err) {
+      console.log("error", err);
     }
   }
 
-  async function eastLatLng (precon_projects) {
-    const East = ["Pickering","Ajax","Whitby","Oshawa"]
-    let prCities = East.map((value) => {
-      return fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${value}.json?access_token=pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA`)
-        .then(response => response.json())
-        .then(data => {
-          let filteredList = precon_projects.filter((projects) => projects.City === value);
-          return {city: value,coordinates: [data.features[0].center[0], data.features[0].center[1]], 
-            cityData: filteredList };
-        }) 
-    })
+  async function westLatLng(precon_projects) {
+    const West = [
+      "Burlington",
+      "Milton",
+      "Halton Hills",
+      "Oakville",
+      "Mississauga",
+      "Brampton",
+      "Caledon",
+    ];
+    let prCities = West.map((value) => {
+      return fetch(
+        `https://api.mapbox.com/geocoding/v5/mapbox.places/${value}.json?access_token=pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          let filteredList = precon_projects.filter(
+            (projects) => projects.City === value
+          );
+          return {
+            city: value,
+            coordinates: [
+              data.features[0].center[0],
+              data.features[0].center[1],
+            ],
+            cityData: filteredList,
+          };
+        });
+    });
 
     const filteredData = await Promise.all(prCities);
-    if(filteredData) {
+    if (filteredData) {
+      setWestRegion(filteredData);
+    }
+  }
+
+  async function northLatLng(precon_projects) {
+    const North = [
+      "King",
+      "Vaughan",
+      "Richmond Hill",
+      "Markham",
+      "Aurora",
+      "New Market",
+      "Stouffville",
+      "East Gwillimbury",
+    ];
+    let prCities = North.map((value) => {
+      return fetch(
+        `https://api.mapbox.com/geocoding/v5/mapbox.places/${value}.json?access_token=pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          let filteredList = precon_projects.filter(
+            (projects) => projects.City === value
+          );
+          return {
+            city: value,
+            coordinates: [
+              data.features[0].center[0],
+              data.features[0].center[1],
+            ],
+            cityData: filteredList,
+          };
+        });
+    });
+
+    const filteredData = await Promise.all(prCities);
+    if (filteredData) {
+      setNorthRegion(filteredData);
+    }
+  }
+
+  async function eastLatLng(precon_projects) {
+    const East = ["Pickering", "Ajax", "Whitby", "Oshawa"];
+    let prCities = East.map((value) => {
+      return fetch(
+        `https://api.mapbox.com/geocoding/v5/mapbox.places/${value}.json?access_token=pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          let filteredList = precon_projects.filter(
+            (projects) => projects.City === value
+          );
+          return {
+            city: value,
+            coordinates: [
+              data.features[0].center[0],
+              data.features[0].center[1],
+            ],
+            cityData: filteredList,
+          };
+        });
+    });
+
+    const filteredData = await Promise.all(prCities);
+    if (filteredData) {
       setEastRegion(filteredData);
     }
   }
 
-  async function centralLatLng (precon_projects) {
-    const Central = ["Etobicoke","North York","Toronto","Scarborough"]
+  async function centralLatLng(precon_projects) {
+    const Central = ["Etobicoke", "North York", "Toronto", "Scarborough"];
     let prCities = Central.map((value) => {
-      return fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${value}.json?access_token=pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA`)
-        .then(response => response.json())
-        .then(data => {
-          let filteredList = precon_projects.filter((projects) => projects.City === value);
-          return {city: value,coordinates: [data.features[0].center[0], data.features[0].center[1]], 
-            cityData: filteredList};
-        }) 
-    })
+      return fetch(
+        `https://api.mapbox.com/geocoding/v5/mapbox.places/${value}.json?access_token=pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          let filteredList = precon_projects.filter(
+            (projects) => projects.City === value
+          );
+          return {
+            city: value,
+            coordinates: [
+              data.features[0].center[0],
+              data.features[0].center[1],
+            ],
+            cityData: filteredList,
+          };
+        });
+    });
     const filteredData = await Promise.all(prCities);
-    if(filteredData) {
+    if (filteredData) {
       setCentralRegion(filteredData);
+    }
+  }
+
+  async function gtaHomes(home) {
+    console.log("---home---", home);
+
+    const homeArray = home[0].cityData.map((aHome) => {
+      return fetch(
+        `https://api.mapbox.com/geocoding/v5/mapbox.places/${aHome.Address}.json?access_token=pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          return {
+            homeName: data.features[0].place_name,
+            coordinates: [
+              data.features[0].center[0],
+              data.features[0].center[1],
+            ],
+            cityData: home,
+          };
+        });
+    });
+    const homesData = await Promise.all(homeArray);
+
+    console.log("homesData", homesData);
+    if (homesData) {
+      setSelectedHome(homesData);
     }
   }
 
@@ -164,24 +254,94 @@ export default () => {
     fetchProjects();
   }, []);
 
+  useEffect(() => {
+    if (selectedCity) {
+      let filteredData;
+      switch (selectedCity.region) {
+        case "north":
+          filteredData = northRegion.filter((o) => o.city == selectedCity.name);
+          console.log("filteredData", filteredData);
+          setSelectedScatterplot(filteredData);
+          // setSelectedHome(homes(filteredData));
+          gtaHomes(filteredData);
+          break;
+        case "central":
+          filteredData = centralRegion.filter(
+            (o) => o.city == selectedCity.name
+          );
+          console.log("filteredData", filteredData);
+          setSelectedScatterplot(filteredData);
+
+          break;
+        case "east":
+          filteredData = eastRegion.filter((o) => o.city == selectedCity.name);
+          console.log("filteredData", filteredData);
+
+          setSelectedScatterplot(filteredData);
+
+          break;
+        case "west":
+          filteredData = westRegion.filter((o) => o.city == selectedCity.name);
+          console.log("filteredData", filteredData);
+          setSelectedScatterplot(filteredData);
+
+          break;
+
+        default:
+        // code block
+      }
+    }
+  }, [selectedCity]);
+
   return (
     <SearchLayout>
       <MapWrap>
-        {westRegion && northRegion && eastRegion && centralRegion ?
-          <PreconMap {...{ viewState, setViewState, setonClick, region,
-            setSelectedRegion ,filteredProjects, eastRegion, westRegion, centralRegion, northRegion,
-            setEastRegion, setWestRegion, setCentralRegion, setOpenProjectsModal,
-            setNorthRegion, setSelectedCityData  }} />         
-          : <div className="loader-center" style={{margin: "100px"}}><Loader type="ThreeDots" color="#f89e37" /></div>
-          }
-      </MapWrap>
-      <Sidebar setOpenModal={setOpenModal} eastRegion={eastRegion} westRegion={westRegion} 
-        centralRegion={centralRegion} northRegion={northRegion} 
-        selectedRegion={selectedRegion} />
-        {openModal && <AppointmentModal setOpenModal={setOpenModal} />}
-        {openProjectsModal && (
-          <ProjectPopUp selectedCityData={selectedCityData} setOpenProjectsModal={setOpenProjectsModal} />
+        {westRegion && northRegion && eastRegion && centralRegion ? (
+          <PreconMap
+            {...{
+              viewState,
+              setViewState,
+              setonClick,
+              region,
+              setSelectedRegion,
+              filteredProjects,
+              eastRegion,
+              westRegion,
+              centralRegion,
+              northRegion,
+              setEastRegion,
+              setWestRegion,
+              setCentralRegion,
+              setOpenProjectsModal,
+              setNorthRegion,
+              setSelectedCity,
+              selectedScatterplot,
+              selectedHome,
+            }}
+          />
+        ) : (
+          <div className="loader-center" style={{ margin: "100px" }}>
+            <Loader type="ThreeDots" color="#f89e37" />
+          </div>
         )}
+      </MapWrap>
+      {selectedRegion && (
+        <Sidebar
+          setOpenModal={setOpenModal}
+          eastRegion={eastRegion}
+          westRegion={westRegion}
+          centralRegion={centralRegion}
+          northRegion={northRegion}
+          selectedRegion={selectedRegion}
+        />
+      )}
+      {openModal && <AppointmentModal setOpenModal={setOpenModal} />}
+      {openProjectsModal && (
+        <ProjectPopUp
+          // selectedCityData={selectedCityData}
+          setOpenProjectsModal={setOpenProjectsModal}
+        />
+      )}
     </SearchLayout>
   );
 };
