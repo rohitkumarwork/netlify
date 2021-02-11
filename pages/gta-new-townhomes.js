@@ -13,6 +13,7 @@ import axios from "axios";
 //contentful
 import ContentfulClient from "../lib/contentful";
 import Loader from "react-loader-spinner";
+import PreconCityMap from "../components/precon/preconCityMap"; 
 
 const CoreWrap = styled.div`
   box-sizing: border-box;
@@ -45,6 +46,7 @@ export default () => {
   const [preconCities, setPreconCities] = useState([]);
   const [allPreconProjects, setAllProjects] = useState();
   const [selectedRegion, setSelectedRegion] = useState();
+  const [selectedCityData, setSelectedCityData] = useState();
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [onclick, setonClick] = useState(false);
   const [viewState, setViewState] = useState({
@@ -64,7 +66,7 @@ export default () => {
   const [selectedCity, setSelectedCity] = useState(null);
   const [selectedScatterplot, setSelectedScatterplot] = useState();
   const [selectedHome, setSelectedHome] = useState();
-  // const [selectedRegion, setSelectedRegion] = useState(false)
+  const [displayCityMap, setDisplayCityMap] = useState();
 
   async function fetchCityDetails() {
     ContentfulClient.getEntries({ content_type: "preConCity" })
@@ -223,7 +225,7 @@ export default () => {
   }
 
   async function gtaHomes(home) {
-    console.log("---home---", home);
+    console.log("home::>>>",home)
 
     const homeArray = home[0].cityData.map((aHome) => {
       return fetch(
@@ -237,13 +239,11 @@ export default () => {
               data.features[0].center[0],
               data.features[0].center[1],
             ],
-            cityData: home,
+            cityData: aHome,
           };
         });
     });
     const homesData = await Promise.all(homeArray);
-
-    console.log("homesData", homesData);
     if (homesData) {
       setSelectedHome(homesData);
     }
@@ -260,33 +260,26 @@ export default () => {
       switch (selectedCity.region) {
         case "north":
           filteredData = northRegion.filter((o) => o.city == selectedCity.name);
-          console.log("filteredData", filteredData);
           setSelectedScatterplot(filteredData);
-          // setSelectedHome(homes(filteredData));
           gtaHomes(filteredData);
           break;
         case "central":
           filteredData = centralRegion.filter(
             (o) => o.city == selectedCity.name
           );
-          console.log("filteredData", filteredData);
           setSelectedScatterplot(filteredData);
-
+          gtaHomes(filteredData);
           break;
         case "east":
           filteredData = eastRegion.filter((o) => o.city == selectedCity.name);
-          console.log("filteredData", filteredData);
-
           setSelectedScatterplot(filteredData);
-
+          gtaHomes(filteredData);
           break;
         case "west":
           filteredData = westRegion.filter((o) => o.city == selectedCity.name);
-          console.log("filteredData", filteredData);
           setSelectedScatterplot(filteredData);
-
+          gtaHomes(filteredData);
           break;
-
         default:
         // code block
       }
@@ -317,6 +310,8 @@ export default () => {
               setSelectedCity,
               selectedScatterplot,
               selectedHome,
+              setSelectedCityData,
+              setDisplayCityMap
             }}
           />
         ) : (
@@ -324,6 +319,13 @@ export default () => {
             <Loader type="ThreeDots" color="#f89e37" />
           </div>
         )}
+        {selectedHome && <PreconCityMap {...{
+              viewState,
+              setViewState,
+              selectedHome,
+              setOpenProjectsModal,
+              setSelectedCityData
+          }} />}
       </MapWrap>
       {selectedRegion && (
         <Sidebar
@@ -338,7 +340,7 @@ export default () => {
       {openModal && <AppointmentModal setOpenModal={setOpenModal} />}
       {openProjectsModal && (
         <ProjectPopUp
-          // selectedCityData={selectedCityData}
+          selectedCityData={selectedCityData}
           setOpenProjectsModal={setOpenProjectsModal}
         />
       )}
