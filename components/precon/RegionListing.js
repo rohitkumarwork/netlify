@@ -5,14 +5,22 @@ import Link from "next/link";
 import Projectpic1 from "./precon-assets/projectPic1.jpg";
 import Loader from "react-loader-spinner";
 
-const RegionListing = ({data}) => {
+const RegionListing = ({data ,selectedCity}) => {
   const [loading,setLoading] = useState(true);
-
+  const [dataList ,setDataList ] =useState(data)
   useEffect(() => {
     if(data && data.length > 0) {
       setLoading(false)
     } 
   })
+  useEffect(()=>{
+    if(selectedCity && data){
+      let filterList = [...data].filter((o)=>
+                o.city === selectedCity.name
+            )
+            setDataList(filterList)
+    }
+  },[selectedCity])
 
   console.log("data.......",data)
 
@@ -24,7 +32,7 @@ const RegionListing = ({data}) => {
 
     {loading === true ? <div className="loader-center"><Loader type="ThreeDots" color="#f89e37" /></div> :
     <>
-      {data.map((value) => value.cityData.map((value) => {
+      {dataList.map((value) => value.cityData.map((value) => {
         return (
           <div className="projectDis">
             <div className="projectPic" style={{background:`url(${Projectpic1})`}}></div>

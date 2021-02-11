@@ -67,7 +67,7 @@ export default () => {
   const [selectedScatterplot, setSelectedScatterplot] = useState();
   const [selectedHome, setSelectedHome] = useState();
   const [displayCityMap, setDisplayCityMap] = useState();
-
+  
   async function fetchCityDetails() {
     ContentfulClient.getEntries({ content_type: "preConCity" })
       .then((response) =>
@@ -335,6 +335,7 @@ export default () => {
           centralRegion={centralRegion}
           northRegion={northRegion}
           selectedRegion={selectedRegion}
+          selectedCity={selectedCity}
         />
       )}
       {openModal && <AppointmentModal setOpenModal={setOpenModal} />}

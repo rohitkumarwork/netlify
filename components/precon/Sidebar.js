@@ -3,7 +3,7 @@ import Select from "react-dropdown-select";
 import Region from "./Region";
 
 function Sidebar({ setOpenModal, region, eastRegion, westRegion, northRegion, 
-  centralRegion, selectedRegion }) {
+  centralRegion, selectedRegion  ,selectedCity}) {
   const [stage, setStage] = useState("stages");
 
   const StageOptions = [
@@ -62,7 +62,7 @@ function Sidebar({ setOpenModal, region, eastRegion, westRegion, northRegion,
       </div>
       <div className="sidebar-citybox">
         <Region region={region} eastRegion={eastRegion} westRegion={westRegion}
-         centralRegion={centralRegion} northRegion={northRegion} selectedRegion={selectedRegion} />
+         centralRegion={centralRegion} northRegion={northRegion} selectedRegion={selectedRegion} selectedCity={selectedCity} />
       </div>
     </div>
   );

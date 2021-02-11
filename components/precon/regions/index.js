@@ -6,15 +6,26 @@ import Loader from "react-loader-spinner";
 
 const Region = (props) => {
     const { regionName, regionData, mainHeading, heading1,heading2, heading3, vipText, 
-        registrations, commingSoonText, soldText, color } = props;
+        registrations, commingSoonText, soldText, color ,selectedCity } = props;
 
     const [loading, setLoader] = useState(true);
+    const [ dataList ,setDataList ] = useState(regionData)
 
     useEffect(() => {
-        if(regionData && regionData.length > 0) {
+        if(dataList && dataList.length > 0) {
             setLoader(false)
         }
     })
+
+    useEffect(()=>{
+        if(selectedCity && regionData){
+            let filterList = [...regionData].filter((o)=>
+                o.city === selectedCity.name
+            )
+            debugger
+            setDataList(filterList)
+        }
+    },[selectedCity])
 
     return (
         <>
@@ -26,7 +37,7 @@ const Region = (props) => {
                         {regionName}
                     </div>
                     {loading === true ? <div className="loader-center"><Loader type="ThreeDots" color="#f89e37" /></div> : 
-                     regionData.map((value) => {
+                     dataList.map((value) => {
                         return (
                             <>
                                 <div className="cityNameTitle">

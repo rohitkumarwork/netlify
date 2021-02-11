@@ -9,6 +9,7 @@ function Region(props) {
     westRegion,
     centralRegion,
     selectedRegion,
+    selectedCity
   } = props;
 
   return (
@@ -26,8 +27,9 @@ function Region(props) {
             registrations="Registrations"
             commingSoonText="Comming Soon"
             soldText="Sold"
+            selectedCity={selectedCity}
           />
-          <RegionListing data={northRegion} />
+          <RegionListing data={northRegion} selectedCity={selectedCity} />
         </>
       ) : selectedRegion === "East" ? (
         <>
@@ -42,8 +44,9 @@ function Region(props) {
             registrations="Registrations"
             commingSoonText="Comming Soon"
             soldText="Sold"
+            selectedCity={selectedCity}
           />
-          <RegionListing data={eastRegion} />
+          <RegionListing data={eastRegion} selectedCity={selectedCity} />
         </>
       ) : selectedRegion === "West" ? (
         <>
@@ -58,8 +61,9 @@ function Region(props) {
             registrations="Registrations"
             commingSoonText="Comming Soon"
             soldText="Sold"
+            selectedCity={selectedCity}
           />
-          <RegionListing data={westRegion} />
+          <RegionListing data={westRegion} selectedCity={selectedCity} />
         </>
       ) : selectedRegion === "Central" ? (
         <>
@@ -74,8 +78,9 @@ function Region(props) {
             registrations="Registrations"
             commingSoonText="Comming Soon"
             soldText="Sold"
+            selectedCity={selectedCity}
           />
-          <RegionListing data={centralRegion} />
+          <RegionListing data={centralRegion} selectedCity={selectedCity} />
         </>
       ) : (
         <>
