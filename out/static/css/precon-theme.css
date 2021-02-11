@@ -1142,7 +1142,8 @@ a:hover {
 	width: 275px;
 	background: #fff; 
 	padding: 5px; 
-	height: 151px;
+	height: auto;
+	max-height: 151px;
 	box-shadow: 0px 4px 15px 0px #888888a6; 
 	border-radius: 5px;
 	overflow-y: scroll; 
