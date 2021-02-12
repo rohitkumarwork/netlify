@@ -5,12 +5,7 @@ import Sidebar from "../components/precon/Sidebar";
 import React, { useState, useEffect } from "react";
 import AppointmentModal from "../components/precon/AppointmentModal";
 import ProjectPopUp from "../components/precon/ProjectPopUp";
-// GQL
-import { useQuery } from "@apollo/react-hooks";
-import { withApollo } from "../lib/apollo";
-import gql from "graphql-tag";
 import axios from "axios";
-//contentful
 import ContentfulClient from "../lib/contentful";
 import Loader from "react-loader-spinner";
 import PreconCityMap from "../components/precon/preconCityMap"; 
@@ -38,17 +33,12 @@ export default () => {
   const geoData = false;
   const [openModal, setOpenModal] = useState(false);
   const [openProjectsModal, setOpenProjectsModal] = useState(false);
-  const [region, setRegion] = useState({});
   const [westRegion, setWestRegion] = useState();
   const [eastRegion, setEastRegion] = useState();
   const [northRegion, setNorthRegion] = useState();
   const [centralRegion, setCentralRegion] = useState();
-  const [preconCities, setPreconCities] = useState([]);
-  const [allPreconProjects, setAllProjects] = useState();
   const [selectedRegion, setSelectedRegion] = useState();
   const [selectedCityData, setSelectedCityData] = useState();
-  const [filteredProjects, setFilteredProjects] = useState([]);
-  const [onclick, setonClick] = useState(false);
   const [viewState, setViewState] = useState({
     longitude: geoData ? geoData.location.lng : -79.5681310928495,
     latitude: geoData ? geoData.location.lat : 44.083363238877766,
@@ -66,15 +56,6 @@ export default () => {
   const [selectedCity, setSelectedCity] = useState(null);
   const [selectedScatterplot, setSelectedScatterplot] = useState();
   const [selectedHome, setSelectedHome] = useState();
-  const [displayCityMap, setDisplayCityMap] = useState();
-  
-  async function fetchCityDetails() {
-    ContentfulClient.getEntries({ content_type: "preConCity" })
-      .then((response) =>
-        setPreconCities(response.items.map((obj) => obj.fields))
-      )
-      .catch(console.error);
-  }
 
   async function fetchProjects() {
     try {
@@ -86,7 +67,6 @@ export default () => {
         }
       );
       let precon_projects = getProjects.data.data.data;
-      setAllProjects(precon_projects);
       westLatLng(precon_projects);
       northLatLng(precon_projects);
       eastLatLng(precon_projects);
@@ -225,8 +205,6 @@ export default () => {
   }
 
   async function gtaHomes(home) {
-    console.log("home::>>>",home)
-
     const homeArray = home[0].cityData.map((aHome) => {
       return fetch(
         `https://api.mapbox.com/geocoding/v5/mapbox.places/${aHome.Address}.json?access_token=pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA`
@@ -250,7 +228,6 @@ export default () => {
   }
 
   useEffect(() => {
-    fetchCityDetails();
     fetchProjects();
   }, []);
 
@@ -294,10 +271,7 @@ export default () => {
             {...{
               viewState,
               setViewState,
-              setonClick,
-              region,
               setSelectedRegion,
-              filteredProjects,
               eastRegion,
               westRegion,
               centralRegion,
@@ -311,7 +285,6 @@ export default () => {
               selectedScatterplot,
               selectedHome,
               setSelectedCityData,
-              setDisplayCityMap
             }}
           />
         ) : (
@@ -320,11 +293,11 @@ export default () => {
           </div>
         )}
         {selectedHome && <PreconCityMap {...{
-              viewState,
-              setViewState,
-              selectedHome,
-              setOpenProjectsModal,
-              setSelectedCityData
+            viewState,
+            setViewState,
+            selectedHome,
+            setOpenProjectsModal,
+            setSelectedCityData
           }} />}
       </MapWrap>
       {selectedRegion && (

@@ -1,16 +1,12 @@
-// Core stuff
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 import Projectpic1 from "./precon-assets/projectPic1.jpg";
-// functional pieces
-import StaticMap, { Popup } from "react-map-gl";
+import StaticMap from "react-map-gl";
 import DeckGL from "deck.gl";
 import { PolygonLayer, ScatterplotLayer } from "@deck.gl/layers";
 
 const MAPBOX_TOKEN =
   "pk.eyJ1Ijoicm9oaXRrdW1hcjEiLCJhIjoiY2tkbzJheWxpMW5zazJybGNwYXVxMWo1aSJ9.xIbmejDwM0vDos0zZfB6DA";
 
-//map data
 const central = [
   [43.58028706246416, -79.52229539554033],
   [43.69359023575162, -79.59370652835283],
@@ -59,7 +55,6 @@ const west = [
   [43.936015869304434, -79.77385738880588],
 ];
 
-//map data conversion
 const polygonData1 = [
   {
     contours: central.map((subarray) => subarray.reverse()),
@@ -91,7 +86,6 @@ const polygonData4 = [
 const PreconMap = ({
   viewState,
   setViewState,
-  setonClick,
   setSelectedRegion,
   eastRegion,
   westRegion,
@@ -100,12 +94,9 @@ const PreconMap = ({
   setOpenProjectsModal,
   setWestRegion,
   setEastRegion,
-  setNorthRegion,
   setSelectedCityData,
   setCentralRegion,
   setSelectedCity,
-  selectedScatterplot,
-  selectedHome,
 }) => {
   const [layers, setLayers] = useState([]);
   const [popup, setPopup] = useState(false);
@@ -138,7 +129,6 @@ const PreconMap = ({
       setLayers([LAYER_POLY1, centralRegionScatterplot]);
       setTotalProjectsPopup(false);
       setSelectedRegion("Central");
-      setonClick(true);
       setIsSelected(true);
       setViewState({
         ...viewState,
@@ -155,7 +145,6 @@ const PreconMap = ({
     },
   });
 
-  //map polygon layer
   const LAYER_POLY2 = new PolygonLayer({
     id: "poly-layers2",
     data: polygonData2,
@@ -173,7 +162,6 @@ const PreconMap = ({
       setSelectedRegion("East");
       setTotalProjectsPopup(false);
       setLayers([LAYER_POLY2, eastRegionScatterplot]);
-      setonClick(true);
       setIsSelected(true);
       setViewState({
         ...viewState,
@@ -190,7 +178,6 @@ const PreconMap = ({
     },
   });
 
-  //map polygon layer
   const LAYER_POLY3 = new PolygonLayer({
     id: "poly-layers3",
     data: polygonData3,
@@ -208,7 +195,6 @@ const PreconMap = ({
       setSelectedRegion("North");
       setTotalProjectsPopup(false);
       setLayers([LAYER_POLY3, northRegionScatterplot]);
-      setonClick(true);
       setIsSelected(true);
       setViewState({
         ...viewState,
@@ -225,7 +211,6 @@ const PreconMap = ({
     },
   });
 
-  // map polygon layer
   const LAYER_POLY4 = new PolygonLayer({
     id: "poly-layers4",
     data: polygonData4,
@@ -243,7 +228,6 @@ const PreconMap = ({
       setSelectedRegion("West");
       setTotalProjectsPopup(false);
       setLayers([LAYER_POLY4, westRegionScatterplot]);
-      setonClick(true);
       setIsSelected(true);
       setViewState({
         ...viewState,
@@ -292,8 +276,6 @@ const PreconMap = ({
         zoom: 11,
         transitionDuration: 3000,
       });
-      // setSelectedCityData([info.object]);
-      // setOpenProjectsModal(true);
     },
 
     onHover: (info) => {
@@ -326,7 +308,6 @@ const PreconMap = ({
     getFillColor: (d) => [248, 158, 55],
     getLineColor: (d) => [248, 158, 55],
     onClick: (info, event) => {
-      // setNorthRegion([info.object]);
       let obj = {
         name: info.object.city,
         region: "north",
@@ -385,8 +366,6 @@ const PreconMap = ({
         transitionDuration: 3000,
       });
       setPopup(false);
-      // setSelectedCityData([info.object]);
-      // setOpenProjectsModal(true)
     },
     onHover: (info) => {
       if (info.object) {
@@ -433,8 +412,6 @@ const PreconMap = ({
         transitionDuration: 3000,
       });
       setPopup(false);
-      // setSelectedCityData([info.object]);
-      // setOpenProjectsModal(true)
     },
     onHover: (info) => {
       if (info.object) {
@@ -477,7 +454,6 @@ const PreconMap = ({
         layers={[layers]}
       >
         <StaticMap
-          //   ref={setmapComponent}
           reuseMaps
           mapStyle={"mapbox://styles/rohitkumar1/ckdo3fykp4n3t1ilibsish1cd"}
           preventStyleDiffing={true}
@@ -493,6 +469,7 @@ const PreconMap = ({
               left: x,
             }}
           >
+            {projects && <div className="city-projects">{projects.city}</div> }
             {projects && projects.cityData.length === 0 && (
               <div>No projects</div>
             )}

@@ -1,7 +1,4 @@
 import React, {useState, useEffect} from "react";
-//core
-import Link from "next/link";
-//images
 import Projectpic1 from "./precon-assets/projectPic1.jpg";
 import Loader from "react-loader-spinner";
 
@@ -13,16 +10,13 @@ const RegionListing = ({data ,selectedCity}) => {
       setLoading(false)
     } 
   })
-  useEffect(()=>{
+  
+  useEffect(() =>{
     if(selectedCity && data){
-      let filterList = [...data].filter((o)=>
-                o.city === selectedCity.name
-            )
-            setDataList(filterList)
+      let filterList = [...data].filter((o) => o.city === selectedCity.name)
+      setDataList(filterList)
     }
   },[selectedCity])
-
-  console.log("data.......",data)
 
   return (
     <div className="cityProjectList">
@@ -62,7 +56,6 @@ const RegionListing = ({data ,selectedCity}) => {
             </div>
             <div className="projectPrice">
               $ {value.Starting_From_Price}
-              {/* ${value.Max_Price} */}
             </div>
           </div>
         )}))}

@@ -1,9 +1,6 @@
 import React, {useState, useEffect} from "react";
-//slider
 import Slider from "react-slick";
-//style
 import styled from "styled-components";
-//images
 import image1 from "./precon-assets/heartIcon.png";
 import image2 from "./precon-assets/calculatorIcon.png";
 import image3 from "./precon-assets/calanderIcon.png";
@@ -17,13 +14,11 @@ import { useRouter } from 'next/router'
 
 const settings = {
   infinite: true,
-  // speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
   speed: 5000,
   autoplay: true,
   autoplaySpeed: 2000,
-  // variableWidth: true
 };
 
 const Slide = styled.div`
@@ -93,12 +88,10 @@ function ProjectPopUp({ setOpenProjectsModal, selectedCityData }) {
             close x
           </span>
         </div>
-        <div className="TotalDevlopProject"> 3 development projects</div>
+        <div className="TotalDevlopProject"> 1 development projects</div>
         <div className="LeftSection">
     {loading === true ? <div className="loader-center"><Loader type="ThreeDots" color="#f89e37" /></div> : 
       <>
-        {/* {selectedCityData.map((value) => value.cityData.map((value) => { */}
-          {/* return <> */}
             <div className="DevelopedProjectDetails">
               <div className="TopHead">
                 <div className="ProjectTitle">
@@ -110,9 +103,6 @@ function ProjectPopUp({ setOpenProjectsModal, selectedCityData }) {
             </div>
             <Slide>
               <Slider {...settings}>
-                {/* { images && images.map((obj)=>
-                  <div style={{width:100 ,height:100,marginLeft:12}}><img src={obj.slice(1,-1)} /></div>
-                )} */}
                 <div style={{ width: 100, height: 100, marginLeft: 12 }}>
                   <img src={Projectpic1} />
                 </div>
@@ -158,8 +148,6 @@ function ProjectPopUp({ setOpenProjectsModal, selectedCityData }) {
                 </li>
               </ul>
             </div>
-            {/* </> */}
-        {/* }))}         */}
       </>
     }
     </div>

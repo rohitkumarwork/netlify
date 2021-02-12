@@ -22,7 +22,6 @@ const Region = (props) => {
             let filterList = [...regionData].filter((o)=>
                 o.city === selectedCity.name
             )
-            debugger
             setDataList(filterList)
         }
     },[selectedCity])

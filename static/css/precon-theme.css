@@ -1188,6 +1188,11 @@ a:hover {
 	align-items: center;
 	width: 100%;
 }
+.city-projects {
+	color: #f79d38;
+    font-size: 18px;
+    font-weight: 500;
+}
 .tooltipContent .projectCard .headTitle .projectName{
 	font-weight: 400;
 	font-size: 15px;

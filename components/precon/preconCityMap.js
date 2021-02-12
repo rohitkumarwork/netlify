@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Projectpic1 from "./precon-assets/projectPic1.jpg";
- 
-import StaticMap, { Popup } from "react-map-gl";
+import StaticMap from "react-map-gl";
 import DeckGL from "deck.gl";
 import { ScatterplotLayer } from "@deck.gl/layers";
 
@@ -19,14 +18,10 @@ const PreconCityMap = ({
   const [layers, setLayers] = useState([]);
   const [popup, setPopup] = useState(false);
   const [projects, setProjects] = useState();
-  const [hoveredRegion, setHoveredRegion] = useState();
   const [latitude, setLatitude] = useState();
   const [longitude, setLongitude] = useState();
   const [x, setX] = useState();
   const [y, setY] = useState();
-  const [xAxis, setXAxis] = useState();
-  const [yAxis, setYAxis] = useState();
-  const [isSelected, setIsSelected] = useState(false);
 
   useEffect(() => {
       setLayers([selectedCityScatterplot]);
@@ -54,11 +49,6 @@ const PreconCityMap = ({
     getRadius: 10,
     getFillColor: (d) => [248, 158, 55],
     getLineColor: (d) => [248, 158, 55],
-    // onClick: (info, event) => {
-    //   setEastRegion([info.object]);
-    //   setSelectedCityData([info.object]);
-    //   setOpenProjectsModal(true)
-    // },
     onHover: (info) => {
       if (info.object) {
         setPopup(true);
@@ -82,7 +72,6 @@ const PreconCityMap = ({
         layers={[layers]}
       >
         <StaticMap
-          //   ref={setmapComponent}
           reuseMaps
           mapStyle={"mapbox://styles/rohitkumar1/ckdo3fykp4n3t1ilibsish1cd"}
           preventStyleDiffing={true}
@@ -98,22 +87,17 @@ const PreconCityMap = ({
               left: x,
             }}
           >
+          {projects && projects.cityData && <div className="city-projects">{projects.cityData.City}</div>}
           {projects && projects.cityData &&
-            <div
-                    className="projectCard"
-                    onClick={() => handleProjectModal(projects.cityData)}
-                  >
-                    <div
-                      className="projectImg"
-                      style={{ background: `url(${Projectpic1})` }}
-                    ></div>
-                    <div class="headTitle">
-                      <div class="projectName">{projects.cityData.Community}</div>
-                      <div class="stage">VIP Launch</div>
-                    </div>
-                    <div className="price">$ {projects.cityData.Starting_From_Price}</div>
-                    <div class="area">{projects.cityData.Address}</div>
-                  </div>
+            <div className="projectCard" onClick={() => handleProjectModal(projects.cityData)}>
+              <div className="projectImg" style={{ background: `url(${Projectpic1})` }}></div>
+              <div class="headTitle">
+                <div class="projectName">{projects.cityData.Community}</div>
+                <div class="stage">VIP Launch</div>
+              </div>
+              <div className="price">$ {projects.cityData.Starting_From_Price}</div>
+              <div class="area">{projects.cityData.Address}</div>
+            </div>
           }
           </div>
         </div>
