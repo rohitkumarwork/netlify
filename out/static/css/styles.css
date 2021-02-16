@@ -2814,7 +2814,7 @@ label.dv-star-rating-star {
 .mapShorting {
   position: absolute;
   left: 90px;
-  top: 140px;
+  top: 150px;
   z-index: 1;
 }
 .mapShorting .inputBox {
@@ -2888,6 +2888,7 @@ label.dv-star-rating-star {
   width: 100%;
   z-index: 23;
   font-weight: 600;
+  top: 0;
 }
 
 /* .swal2-icon.swal2-success {
@@ -2906,7 +2907,7 @@ buyerpagecss
 
   position: relative;
 
-  padding: 70px 0 30px;
+  padding: 0px 0 30px;
 }
 .topContent .headings {
   width: 100%;
