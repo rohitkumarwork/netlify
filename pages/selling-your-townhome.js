@@ -19,6 +19,8 @@ import {Title} from '../components/generic/GenericComponents'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck  } from "@fortawesome/free-solid-svg-icons";
 
+import Sellerpanel from '../components/seller/Seller'
+
 
 const DIYWrap = styled.div`
   background-color: #f1f1f1;
@@ -51,6 +53,7 @@ const Point = styled.p`
 const DIYPackage = ({price, title, points}) => {
   return (
     <DIYWrap>
+     
       <DIYTitle>{title}</DIYTitle>
       <Price>${price}</Price>
       {points.map((point) => {
@@ -100,9 +103,10 @@ const CutoffText = styled.p`
 export default () => {
   return (
     <ClientLayout>
-      <Header title={'Selling Your Townhome'} />
+       <Sellerpanel/>
+      {/* <Header title={'Selling Your Townhome'} /> */}
 
-      <PackagesWrap  
+      {/* <PackagesWrap  
         title={'Welcome to the Future of Real Estate in the GTA'} 
         subTitle={'Why stick to just one option? We offer a variety of packages to fit to let you sell your home the way you want it to be sold. Get the services you need, and sell your house for its best price!'}>
         
@@ -180,7 +184,7 @@ export default () => {
           subText="However if your first offer doesnt work out, dont worry! You can make an offer on an additonal house before we seamlessly moving you to into one of our first three packages!"
           icon={faMapMarkedAlt}
           mainColor="#F89E37"
-        />
+        /> */}
 
 
         {/* <ModifiedTitle>Frequently Asked Questions</ModifiedTitle>
@@ -188,7 +192,7 @@ export default () => {
         <FaqQuestion question="How does this look?" answer="It looks pretty decent!"/>
         <FaqQuestion question="How does this look?" answer="It looks pretty decent!"/>
         <FaqQuestion question="How does this look?" answer="It looks pretty decent!"/> */}
-      </PackagesWrap>
+      {/* </PackagesWrap> */}
 
 
     </ClientLayout>

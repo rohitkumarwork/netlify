@@ -1,0 +1,412 @@
+@media (min-width: 1600px){
+    .container {
+        max-width: 1280px;
+    }
+    }
+
+
+   
+
+    
+    .btn-primary {
+        color: #fff;
+        background-color: #f89e38;
+        border-color: #f89e38;
+    } 
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #e08f32;
+        border-color: #df8e33;
+    }
+    .seller_Page_panel {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .seller_Page_panel .bannerPanel {
+        width: 100%;
+        float: left;
+        position: relative;
+        display: flex;
+    }
+    .seller_Page_panel .bannerPanel .left_Side {
+        width: 35%;
+        height: 100%;
+        float: left;
+        position: relative;
+        min-height: 600px;
+        background-origin: content-box;
+        background-position: center;
+        background-size: cover;
+    }
+    .seller_Page_panel .bannerPanel .right_Side {
+        width: 65%;
+        float: left;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .seller_Page_panel .bannerPanel .left_Side{
+        background-image: url(/static/images/seller-banner-bg.png);
+    
+    }
+    .seller_Page_panel .bannerPanel .right_Side .banner_Content {
+        position: relative;
+    }
+    .seller_Page_panel .bannerPanel .right_Side .banner_Content h1 {
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .seller_Page_panel .bannerPanel .right_Side .banner_Content h1 span {
+        color: #f89e38;
+    }
+    .seller_Page_panel .bannerPanel .right_Side .banner_Content p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .seller_Page_panel .bannerPanel .right_Side .banner_Content .offerBtn {
+        width: 100%;
+        float: left;
+        position: relative;
+        margin-top: 20px;
+    }
+    .seller_Page_panel .bannerPanel .right_Side .banner_Content .offerBtn button {
+        background: #f89e38;
+        padding: 10px 50px;
+        display: unset;
+        min-height: auto;
+        height: auto;
+        line-height: 1.5;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .seller_Page_panel .bannerPanel .right_Side .banner_Content .offerBtn button div {
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .packagesPanel_box {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 24px;
+        box-shadow: 2px 2px 56px 0px #96959554;
+        top: -52px;
+        z-index: 1;
+        display: block;
+        background: #fff;
+    }
+    .packagesPanel_box .stepsContent {
+        width: 100%;
+        float: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .packagesPanel_box .stepsContent .stepsNo {
+        font-size: 18px;
+        font-weight: 600;
+        color: #f89e38;
+        width: 100%;
+        float: left;
+    }
+    .packagesPanel_box .stepsContent .Step_title {
+        width: 100%;
+        float: left;
+        position: relative;
+        font-size: 42px!important;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+    .package_townType {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .package_townType .townType_listBox {
+        width: 49%;
+        float: left;
+        position: relative;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        margin-left: 5px;
+        padding: 3px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: all ease .5s;
+        background: #fff;
+    }
+    .package_townType .townType_listBox:hover {
+        border: 1px solid #f89e38;
+        transform: scale(1.1);
+        z-index: 1;
+    }
+    .package_townType .townType_listBox .townType_img {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+    }
+    .package_townType .townType_listBox .townType_img img {
+        width: 100%;
+    }
+    .package_townType .townType_listBox .homeTypes {
+        font-size: 15px;
+        font-weight: 700;
+        padding: 8px;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .stepSecond {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 0px 0px 50px;
+    }
+    .stepSecond:before {
+        width: 45%;
+        height: 100%;
+        position: absolute;
+        background-image: url(../../static/images/step2-bg.png);
+        content: "";
+        right: 0;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .stepSecond .stepsContent {
+        width: 100%;
+        float: left;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .stepSecond .stepsContent .stepsNo {
+        font-size: 18px;
+        font-weight: 600;
+        color: #f89e38;
+        width: 100%;
+        float: left;
+    }
+    .stepSecond .stepsContent .Step_title {
+        width: 100%;
+        float: left;
+        position: relative;
+        font-size: 42px!important;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+    .stepSecond .accordianBox {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 25px;
+        box-shadow: 0px 0px 30px 0px #d5d5d5a8;
+        border-radius: 15px;
+        background: #fff;
+    }
+    .stepSecond .accordianBox .card {
+        width: 100%;
+        float: left;
+        position: relative;
+        border: 0px;
+        padding-left: 70px;
+        z-index: 8;
+        background: transparent;
+    }
+    .stepSecond .accordianBox .accordion {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .stepSecond .accordianBox .accordion:before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 97%;
+        background: #ececec;
+        z-index: 0;
+        left: 25px;
+        top: 12px;
+    }
+    .stepSecond .accordianBox .card .cardHeaderContent {
+        width: 100%;
+        float: left;
+        position: relative;
+        border: 0;
+    }
+    .stepSecond .accordianBox .card .cardHeaderContent button {
+        width: 100%;
+        text-align: left;
+        font-weight: 700;
+        color: #212529;
+        border: 0;
+        position: relative;
+        padding: 10px 0px;
+        font-size: 22px;
+        outline: none;
+        box-shadow: none;
+        text-decoration: none;
+        height: auto;
+    }
+    .stepSecond .accordianBox .card .cardBodyContent {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .stepSecond .accordianBox .card .cardBodyContent p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .stepSecond .accordianBox .card .cardHeaderContent.active-panel button {
+        color: #f89e38;
+    }
+    .stepSecond .accordianBox .card .cardHeaderContent button img {
+        width: 46px;
+        position: absolute;
+        left: -67px;
+        filter: brightness(0) invert(0.5);
+    }
+    .stepSecond .accordianBox .card .cardHeaderContent.active-panel button img{
+        filter: brightness(1) invert(0);
+    }
+    .stepSecond .accordianBox .card .cardHeaderContent button img:before {
+        background: #e40a0a;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        width: 30px;
+        height: 30px;
+    }
+    .stepThird {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 50px 0;
+    }
+    .stepThird .stepsContent {
+        width: 100%;
+        float: left;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .stepThird .stepsContent .stepsNo {
+        font-size: 18px;
+        font-weight: 600;
+        color: #f89e38;
+        width: 100%;
+        float: left;
+    }
+    .stepThird .stepsContent .Step_title {
+        width: 100%;
+        float: left;
+        position: relative;
+        font-size: 42px!important;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+    .stepThird .listingServices {
+        width: 100%;
+        float: left;
+        position: relative;
+        background: white;
+        box-shadow: 0px 0px 15px 0px #d5d5d5d5;
+        padding: 30px;
+        display: flex;
+        height: 100%;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+    .stepThird .listingServices .commistionTitle {
+        font-size: 24px;
+        font-weight: 600;
+        color: #f89e38;
+    }
+    .stepThird .listingServices ul {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .stepThird .listingServices ul li {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+    .stepThird .listingServices ul li + li:before {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        border-top: 1px dashed #d5d5d5;
+        content: "";
+        top: 0;
+    }
+    .stepThird:before {
+        width: 25%;
+        height: 60%;
+        position: absolute;
+        background-image: url(../../static/images/packages-board.png);
+        content: "";
+        left: 0;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .package_Modals {
+        z-index: 9999;
+    }
+    .package_Modals .modal-dialog {
+        max-width: 90%;
+    }
+    .package_Modals .stepThird:before{
+        display: none;
+    }
+    .package_Modals .stepThird .listingServices ul li:hover{
+        color: #f89e38;
+    }
+    .package_Modals .stepThird .listingServices {
+        box-shadow:none;
+        border: 1px solid #eaeaea;
+    }
+    .package_Modals .stepThird {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 30px;
+    }
+    .package_Modals .stepThird .stepsContent {
+        margin-bottom: 30px;
+    }
+    .package_Modals .stepThird .stepsContent .stepsNo {
+        font-size: 24px;
+    }
+
+    .closBtn {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+    .closBtn button {
+        color: #afafaf;
+        font-size: 47px;
+        z-index: 6;
+        height: 60px;
+        width: 60px;
+        padding: 0;
+        font-weight: 100;
+    }
+    .closBtn button:hover {
+        text-decoration: none;
+        color: #f89e38;
+    }

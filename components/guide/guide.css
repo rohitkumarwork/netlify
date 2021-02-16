@@ -1,0 +1,177 @@
+.topHeader_Sec {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 50px;
+    background-image: url(../../static/images/guide-map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.topHeader_Sec .mainTitle {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 600;
+}
+.topHeader_Sec .subTitle {
+    text-align: center;
+    width: 100%;
+    float: left;
+    position: relative;
+    font-size: 18px;
+}
+.tabsList {
+    background-color: white;
+    box-shadow: 0 2px 50px 0 rgb(0 0 0 / 20%);
+}
+.tabsList .nav-item {
+    width: 25%;
+}
+.tabsList .nav-item a {
+    text-align: center;
+    padding: 20px;
+    background: #fff!important;
+    color: #252525!important;
+    width: 100%;
+    float: left;
+    transition: all ease .5s;
+    border-bottom: 4px solid #ff000000;
+}
+.tabsList .nav-item a.nav-link.active {
+    background: #fff;
+    box-shadow: 0px 0px 15px 0px #d5d5d5;
+    z-index: 1;
+    position: relative;
+    transform: scale(1.1);
+    transition: all ease .5s;
+    border-bottom: 4px solid #f89e38;
+}
+.tabsList .nav-item a.nav-link .tabulerList .guideList_icon img {
+    filter: brightness(0 ) invert(.5);
+    max-width: 70px;
+}
+
+.tabsList .nav-item a.nav-link.active .tabulerList {
+    color: #f59c37!important;
+}
+.tabsList .nav-item a.nav-link.active .tabulerList {
+    color: #f59c37!important;
+}
+
+.tabsList .nav-item a.nav-link.active .tabulerList .guideList_icon {
+    color: #f59c37!important;
+}
+.tabsList .nav-item a.nav-link.active .tabulerList .guideList_icon img {
+    filter: brightness(1) invert(0);
+}
+.tabsList .nav-item a.nav-link.active .tabulerList .guideList_name {
+    color: #f59c37!important;
+    font-weight: 700;
+}
+.tabsList .nav-item a .tabulerList .guideList_name {
+    width: 100%;
+    float: left;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #626262;
+}
+.guide_InfoBox {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 50px 0;
+}
+.guide_InfoBox .headingBox .subtitle {
+    width: 100%;
+    float: left;
+    position: relative;
+    font-size: 16px;
+}
+.guide_InfoBox .headingBox {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+}
+.guide_InfoBox .headingBox .title {
+    width: 100%;
+    float: left;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #f89e38;
+}
+.guide_InfoBox .Info_Guide {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0px 0px 40px 0px #d5d5d5b5;
+}
+.guide_InfoBox .Info_Guide .guideContent {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.guide_InfoBox .Info_Guide .guideContent h4 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.guide_InfoBox .Info_Guide .guideContent p {
+    width: 100%;
+    float: left;
+    position: relative;
+    font-size: 14px;
+    min-height: 120px;
+}
+.guide_InfoBox .Info_Guide .guideContent .actBtn .orangeBtn {
+    background: #f89e38;
+    border: 0;
+    border-radius: 0;
+}
+.guide_InfoBox .Info_Guide .carousel-indicators {
+    bottom: -66px;
+}
+.guide_InfoBox .Info_Guide .carousel-indicators li {
+    width: 10px!important;
+    height: 10px!important;
+    background: #d4d4d4;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-top: 0px;
+    transition: all ease .4s;
+}
+.guide_InfoBox .Info_Guide .carousel-indicators li.active {
+    width: 22px!important;
+    background-color: #f59c37;
+    transition: all ease .4s;
+    border-radius: 5px;
+}
+.guide_InfoBox .Info_Guide .carousel-control-next, .guide_InfoBox .Info_Guide .carousel-control-prev {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    color: #f89e38;
+    text-align: center;
+    opacity: 1.5;
+    transition: opacity .15s ease;
+    height: 30px;
+    background: #f89e38;
+    border-radius: 50%;
+    font-size: 13px;
+}
+.guide_InfoBox .Info_Guide .carousel-control-next {
+    right: -40px;
+}
+.guide_InfoBox .Info_Guide .carousel-control-prev {
+    left: -40px;
+}

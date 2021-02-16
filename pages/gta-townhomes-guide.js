@@ -2,11 +2,16 @@ import ClientLayout from '../layouts/clientLayout.js';
 import Header from '../components/seoComponents/header'
 import Summary from '../components/seoComponents/summary'
 import CitiesGrid from '../components/seoComponents/citiesGrid'
+import Guidepanel from '../components/guide/guide'
 
 export default () => {
   return (
-    <ClientLayout>
-      <Header title={'GTA Townhomes Guide'} />
+    <ClientLayout className="layoutBox">
+      {/* <Header title={'TOWNHOME GUIDE'} /> */}
+
+
+      <Guidepanel/>
+
       <Summary 
         city={'the GTA'} 
         para1={"Looking for a townhome in the GTA? We have you covered in every city and neighbourhood! Our experts have grabbed all the data you'd want to know before moving anywhere in the GTA"} 

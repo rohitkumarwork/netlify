@@ -14,6 +14,7 @@ const MainWrap = styled.div`
   width: 100%;
   margin: 0px auto;
   position: relative;
+  padding-top:120px;
 `;
 
 const HeaderSpace = styled.div`
