@@ -77,7 +77,6 @@ const GET_SOLD_GIS_LISTINGS = gql`
         prop_type: { _in: $prop_type }
         bedrooms: { _in: $bedrooms }
         bathrooms: { _in: $bathrooms }
-        parking_spots: { _in: $parking_spots }
         price: { _gte: $minPrice, _lte: $maxPrice }
         gis_location: { _st_within: $viewportPolygon }
         square_footage: { _gte: $minFootage, _lte: $maxFootage }
