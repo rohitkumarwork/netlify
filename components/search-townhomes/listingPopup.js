@@ -230,23 +230,38 @@ export default ({
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [time, setTime] = useState(moment());
-  const { loading, error, data, networkStatus } = useQuery(GET_LISTING, {
-    // skip: listingPreview == null || soldSearch,
-    skip: listingPreview == soldSearch,
+  // const { loading, error, data, networkStatus } = useQuery(GET_LISTING, {
+  //   // skip: listingPreview == null || soldSearch,
+  //   skip: listingPreview == soldSearch,
+  //   variables: { id: listingPreview.id },
+  // });
+
+  // const { data: soldData, error: soldErr } = useQuery(GET_SOLD_LISTING, {
+  //   skip: listingPreview == !soldSearch,
+  //   variables: { id: listingPreview.id },
+  // });
+  const { loading, data, error } = soldSearch
+  ? useQuery(GET_SOLD_LISTING, {
+    variables: { id: listingPreview.id },
+  })
+  : useQuery(GET_LISTING, {
     variables: { id: listingPreview.id },
   });
 
-  const { data: soldData, error: soldErr } = useQuery(GET_SOLD_LISTING, {
-    skip: listingPreview == !soldSearch,
-    variables: { id: listingPreview.id },
-  });
 
   let listing =
-    data != undefined
+    data != undefined && data.listings !== undefined
       ? data.listings[0]
-      : soldData != undefined
-      ? soldData.sold_listings[0]
+      : data != undefined
+      ? data.sold_listings[0]
       : null;
+
+  // let listing =
+  //   data != undefined
+  //     ? data.listings[0]
+  //     : soldData != undefined
+  //     ? soldData.sold_listings[0]
+  //     : null;
 
   const { data: nearbyData } = useQuery(GET_NEARBY_DATA, {
     skip: data == undefined,
